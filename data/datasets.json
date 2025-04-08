@@ -1797,6 +1797,17 @@
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
 	{
+		"name": "Red Bay 3m (Cloud Optimised GeoTiff)",
+		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI. TXT files have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 3m. The original data is provided by Agri-Food and Biosciences Institute - Fisheries and Aquatic Ecosystems Branch and is available on www.opendatani.gov.uk. Data is licenced under the OGLV3.",
+		"category": "LiDAR, Bathymetry",
+		"provider": "Agri-Food and Biosciences Institute - Fisheries and Aquatic Ecosystems Branch",
+		"fileType": "COG Geotiff",
+		"fileSize": "1633691",
+		"downloadUrl": "https://better-open-data.com/lidar/Redbay3m.tif",
+		"opendatani_url": "https://admin.opendatani.gov.uk/dataset/bathymetric-lidar-for-red-bay",
+		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
+	},
+	{
 		"name": "Ringreagh DSM (Cloud Optimised GeoTiff)",
 		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI. ASC grids have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 0.2m. The original data is provided by the Department for Communities (Historic Environment Division) and is available on www.opendatani.gov.uk. Data is licenced under the OGLV3.",
 		"category": "LiDAR, Elevation, DSM",
@@ -1970,6 +1981,17 @@
 		"fileSize": "38366399",
 		"downloadUrl": "https://better-open-data.com/lidar/Strabane_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Strabane_23_05_2004.zip",
+		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
+	},
+	{
+		"name": "Strangford 2m (Cloud Optimised GeoTiff)",
+		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI. TXT files have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 2m. The original data is provided by Agri-Food and Biosciences Institute - Fisheries and Aquatic Ecosystems Branch and is available on www.opendatani.gov.uk. Data is licenced under the OGLV3.",
+		"category": "LiDAR, Bathymetry",
+		"provider": "Agri-Food and Biosciences Institute - Fisheries and Aquatic Ecosystems Branch",
+		"fileType": "COG Geotiff",
+		"fileSize": "5368807",
+		"downloadUrl": "https://better-open-data.com/lidar/Strangford2m.tif",
+		"opendatani_url": "https://admin.opendatani.gov.uk/dataset/bathymetric-lidar-for-small-area-of-strangford-lough",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
 	{
