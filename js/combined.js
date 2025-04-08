@@ -70,7 +70,7 @@ async function loadDatasets() {
             .filter(dataset => dataset.fileType && dataset.fileType.includes('COG'))
             .filter(dataset => dataset.downloadUrl && dataset.name)
             .map(dataset => ({
-                url: `https://better-open-data.com/${dataset.downloadUrl}`,
+                url: `${dataset.downloadUrl}`,
                 name: dataset.name,
                 description: dataset.description || 'No description available',
                 visible: false
@@ -766,7 +766,7 @@ function renderCards() {
                                 </a>`
                             }
                             <button class="btn btn-sm btn-outline-secondary copy-url" 
-                                    data-url="https://better-open-data.com/${dataset.downloadUrl}">
+                                    data-url="${dataset.downloadUrl}">
                                 <i class="bi bi-clipboard"></i>
                             </button>
                         </div>
