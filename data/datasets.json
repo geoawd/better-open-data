@@ -6,7 +6,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Ardquin_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ardquin_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Ardquin.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -17,7 +17,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Ardquin_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ardquin_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Ardquin.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -28,7 +28,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "24665183",
-		"downloadUrl": "lidar/Ardstraw_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ardstraw_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ardstraw_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -39,7 +39,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "28331097",
-		"downloadUrl": "lidar/Ardstraw_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ardstraw_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ardstraw_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -50,7 +50,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Ardtole_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ardtole_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Ardtole.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -61,7 +61,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Ardtole_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ardtole_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Ardtole.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -72,7 +72,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "545687504",
-		"downloadUrl": "lidar/Armagh-Dungannon-Coalisland_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Armagh-Dungannon-Coalisland_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Armagh-Dungannon-Coalisland_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -83,7 +83,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "54862361",
-		"downloadUrl": "lidar/Ballinamallard_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballinamallard_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballinamallard_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -94,7 +94,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "60793514",
-		"downloadUrl": "lidar/Ballinamallard_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballinamallard_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballinamallard_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -105,7 +105,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "27541240",
-		"downloadUrl": "lidar/Ballycastle_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballycastle_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballycastle_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -116,7 +116,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "238940000",
-		"downloadUrl": "lidar/Ballyclare_23_04_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballyclare_23_04_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballyclare_23_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -127,7 +127,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "6329432",
-		"downloadUrl": "lidar/Ballygalley_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballygalley_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballygalley_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -138,7 +138,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "28993546",
-		"downloadUrl": "lidar/Ballygowan_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballygowan_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballygowan_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -149,7 +149,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "240381063",
-		"downloadUrl": "lidar/Ballymena_23_04_2009_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballymena_23_04_2009_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballymena_23_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -160,7 +160,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "230186720",
-		"downloadUrl": "lidar/Ballymena_23_04_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballymena_23_04_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballymena_23_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -171,7 +171,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "96846665",
-		"downloadUrl": "lidar/Ballynahinch_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballynahinch_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballynahinch_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -182,7 +182,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "8055267",
-		"downloadUrl": "lidar/Ballynavally_04_04_2007_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ballynavally_04_04_2007_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Ballynavally_04_04_2007.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -193,7 +193,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "79671679",
-		"downloadUrl": "lidar/Banbridge_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Banbridge_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Banbridge_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -204,7 +204,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "311157867",
-		"downloadUrl": "lidar/Bangor_04_04_2007_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Bangor_04_04_2007_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Bangor_04_04_2007.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -216,7 +216,7 @@
 		"provider": "DfI, Rivers Agency, LPS, Cyient Europe Limited",
 		"fileType": "COG Geotiff",
 		"fileSize": "1507077339",
-		"downloadUrl": "lidar/Belfast_2006_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Belfast_2006_DSM.tif",
 		"opendatani_url": "https://www.opendatani.gov.uk/@department-for-infrastructure-rivers/lidar-belfast-city-2006",
 		"acknowledgement": "Belfast City LIDAR is provided by the Department for Infrastructure (Rivers) with the permission of the copyright owner, Cyient Europe Limited, and licensed under the Open Government Licence v3.0"
 	},
@@ -228,7 +228,7 @@
 		"provider": "DfI, Rivers Agency, LPS, Cyient Europe Limited",
 		"fileType": "COG Geotiff",
 		"fileSize": "1389804355",
-		"downloadUrl": "lidar/Belfast_2006_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Belfast_2006_DTM.tif",
 		"opendatani_url": "https://www.opendatani.gov.uk/@department-for-infrastructure-rivers/lidar-belfast-city-2006",
 		"acknowledgement": "Belfast City LIDAR is provided by the Department for Infrastructure (Rivers) with the permission of the copyright owner, Cyient Europe Limited, and licensed under the Open Government Licence v3.0"
 	},
@@ -240,7 +240,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "35362953",
-		"downloadUrl": "lidar/Belleek_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Belleek_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Belleek_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -251,7 +251,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "39952717",
-		"downloadUrl": "lidar/Belleek_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Belleek_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Belleek_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -262,7 +262,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "55024245",
-		"downloadUrl": "lidar/Beragh_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Beragh_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Beragh_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -273,7 +273,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "62389302",
-		"downloadUrl": "lidar/Beragh_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Beragh_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Beragh_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -284,7 +284,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Black_Pigs_Dyke_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Black_Pigs_Dyke_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Black%20Pigs%20Dyke.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -295,7 +295,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Black_Pigs_Dyke_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Black_Pigs_Dyke_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Black%20Pigs%20Dyke.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -306,7 +306,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "619204167",
-		"downloadUrl": "lidar/Blackwater_16_06_2014_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Blackwater_16_06_2014_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Blackwater_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -317,7 +317,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "611703910",
-		"downloadUrl": "lidar/Blackwater_16_06_2014_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Blackwater_16_06_2014_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Blackwater_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -328,7 +328,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Bonamargy_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Bonamargy_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Bonamargy.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -339,7 +339,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Bonamargy_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Bonamargy_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Bonamargy.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -350,7 +350,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "19062780",
-		"downloadUrl": "lidar/Burren_03_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Burren_03_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Burren_03_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -361,7 +361,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "21031800",
-		"downloadUrl": "lidar/Burren_03_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Burren_03_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Burren_03_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -372,7 +372,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "25678706",
-		"downloadUrl": "lidar/Bushmills_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Bushmills_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Bushmills_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -383,7 +383,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Cahery_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cahery_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Cahery.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -394,7 +394,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Cahery_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cahery_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Cahery.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -405,7 +405,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "26533422",
-		"downloadUrl": "lidar/Camowen_16_06_2014_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Camowen_16_06_2014_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Camowen_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -416,7 +416,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "26276125",
-		"downloadUrl": "lidar/Camowen_16_06_2014_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Camowen_16_06_2014_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Camowen_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -427,7 +427,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "318555768",
-		"downloadUrl": "lidar/Carrickfergus_04_04_2007_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Carrickfergus_04_04_2007_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Carrickfergus_04_04_2007.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -438,7 +438,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "35249737",
-		"downloadUrl": "lidar/Carryduff_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Carryduff_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Carryduff_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -449,7 +449,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "28046795",
-		"downloadUrl": "lidar/Castlederg_23_05_2004_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Castlederg_23_05_2004_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Castlederg_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -460,7 +460,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "27318817",
-		"downloadUrl": "lidar/Castlederg_23_05_2004_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Castlederg_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Castlederg_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -471,7 +471,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "14887816",
-		"downloadUrl": "lidar/Castlereagh_04_04_2007_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Castlereagh_04_04_2007_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Castlereagh_04_04_2007.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -482,7 +482,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "693133957",
-		"downloadUrl": "lidar/Cave_Hill_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cave_Hill_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Cave%20Hill.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -493,7 +493,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "684610342",
-		"downloadUrl": "lidar/Cave_Hill_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cave_Hill_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Cave%20Hill.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -504,7 +504,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "60907618",
-		"downloadUrl": "lidar/Charlemont_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Charlemont_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Charlemont.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -515,7 +515,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "59284402",
-		"downloadUrl": "lidar/Charlemont_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Charlemont_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Charlemont.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -526,7 +526,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "19294902",
-		"downloadUrl": "lidar/Clady_10_03_2009_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Clady_10_03_2009_DSM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -537,7 +537,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "18963292",
-		"downloadUrl": "lidar/Clady_10_03_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Clady_10_03_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Clady_10_03_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -548,7 +548,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "271781203",
-		"downloadUrl": "lidar/Clandeboye_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Clandeboye_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Clandeboye.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -559,7 +559,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "262997260",
-		"downloadUrl": "lidar/Clandeboye_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Clandeboye_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Clandeboye.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -570,7 +570,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "468808611",
-		"downloadUrl": "lidar/Clogher_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Clogher_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Cornashee.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -581,7 +581,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "483357940",
-		"downloadUrl": "lidar/Clogher_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Clogher_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Cornashee.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -592,7 +592,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "46681501",
-		"downloadUrl": "lidar/Cloghmills_16_06_2014_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cloghmills_16_06_2014_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Cloghmills_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -603,7 +603,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "46172007",
-		"downloadUrl": "lidar/Cloghmills_16_06_2014_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cloghmills_16_06_2014_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Cloghmills_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -614,7 +614,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "107252495",
-		"downloadUrl": "lidar/Cookstown_06_06_2013_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cookstown_06_06_2013_DSM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -625,7 +625,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "103384394",
-		"downloadUrl": "lidar/Cookstown_06_06_2013_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cookstown_06_06_2013_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Cookstown_06_06_2013.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -636,7 +636,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "272099336",
-		"downloadUrl": "lidar/Cornashee_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cornashee_DSM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -647,7 +647,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "267453200",
-		"downloadUrl": "lidar/Cornashee_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cornashee_DTM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -658,7 +658,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "540333454",
-		"downloadUrl": "lidar/Crossmurrin_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Crossmurrin_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Crossmurrin.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -669,7 +669,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "531503655",
-		"downloadUrl": "lidar/Crossmurrin_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Crossmurrin_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Crossmurrin.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -680,7 +680,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "71071522",
-		"downloadUrl": "lidar/Cullybackey_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cullybackey_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Cullybackey_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -691,7 +691,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "20269858",
-		"downloadUrl": "lidar/Cushendall_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Cushendall_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Cushendall_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -702,7 +702,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "215144033",
-		"downloadUrl": "lidar/Devenish_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Devenish_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Devenish.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -713,7 +713,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "154959731",
-		"downloadUrl": "lidar/Devenish_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Devenish_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Devenish.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -724,7 +724,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "129098827",
-		"downloadUrl": "lidar/Dohertys_Tower_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dohertys_Tower_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dohertys%20Tower.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -735,7 +735,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "126965183",
-		"downloadUrl": "lidar/Dohertys_Tower_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dohertys_Tower_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dohertys%20Tower.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -746,7 +746,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "1151088815",
-		"downloadUrl": "lidar/Donegore_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Donegore_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Donegore.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -757,7 +757,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "1133127916",
-		"downloadUrl": "lidar/Donegore_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Donegore_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Donegore.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -768,7 +768,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "22717960",
-		"downloadUrl": "lidar/Dougary_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dougary_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Dougary_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -779,7 +779,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "25402568",
-		"downloadUrl": "lidar/Dougary_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dougary_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Dougary_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -790,7 +790,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "193742430",
-		"downloadUrl": "lidar/Downpatrick_05_05_2009_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Downpatrick_05_05_2009_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Downpatrick_05_05_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -801,7 +801,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "189620191",
-		"downloadUrl": "lidar/Downpatrick_05_05_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Downpatrick_05_05_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Downpatrick_05_05_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -812,7 +812,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "118678753",
-		"downloadUrl": "lidar/Dundrum_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dundrum_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dundrum.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -823,7 +823,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "118081993",
-		"downloadUrl": "lidar/Dundrum_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dundrum_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dundrum.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -834,7 +834,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "156239330",
-		"downloadUrl": "lidar/Dunluce_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunluce_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dunluce.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -845,7 +845,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "143415583",
-		"downloadUrl": "lidar/Dunluce_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunluce_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dunluce.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -856,7 +856,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "103197603",
-		"downloadUrl": "lidar/Dunmull_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunmull_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dunmull.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -867,7 +867,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "102562069",
-		"downloadUrl": "lidar/Dunmull_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunmull_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dunmull.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -878,7 +878,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "102885870",
-		"downloadUrl": "lidar/Dunmurry_04_04_2007_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunmurry_04_04_2007_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Dunmurry_04_04_2007.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -889,7 +889,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "306638853",
-		"downloadUrl": "lidar/Dunseverick_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunseverick_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dunseverick.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -900,7 +900,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "302599038",
-		"downloadUrl": "lidar/Dunseverick_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Dunseverick_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Dunseverick.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -911,7 +911,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "159650703",
-		"downloadUrl": "lidar/East Belfast_29_05_2013_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/East Belfast_29_05_2013_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/East Belfast_29_05_2013.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -922,7 +922,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "154008218",
-		"downloadUrl": "lidar/East Belfast_29_05_2013_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/East Belfast_29_05_2013_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/East Belfast_29_05_2013.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -933,7 +933,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "43684698",
-		"downloadUrl": "lidar/Eglinton_11_12_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Eglinton_11_12_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Eglinton_11_12_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -944,7 +944,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "42595188",
-		"downloadUrl": "lidar/Eglinton_11_12_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Eglinton_11_12_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Eglinton_11_12_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -955,7 +955,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "142385866",
-		"downloadUrl": "lidar/Enniskillen_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Enniskillen_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Enniskillen_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -966,7 +966,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "157284520",
-		"downloadUrl": "lidar/Enniskillen_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Enniskillen_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Enniskillen_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -977,7 +977,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "57278422",
-		"downloadUrl": "lidar/Fintona_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Fintona_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Fintona_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -988,7 +988,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "64326576",
-		"downloadUrl": "lidar/Fintona_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Fintona_02_02_2012_DTM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -999,7 +999,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "58367569",
-		"downloadUrl": "lidar/Folk Park Newtownstewart_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Folk Park Newtownstewart_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Fintona_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1010,7 +1010,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "65112566",
-		"downloadUrl": "lidar/Folk Park Newtownstewart_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Folk Park Newtownstewart_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Folk Park Newtownstewart_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1021,7 +1021,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "212116755",
-		"downloadUrl": "lidar/Foyle_23_05_2004_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Foyle_23_05_2004_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Foyle_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1032,7 +1032,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "211871681",
-		"downloadUrl": "lidar/Foyle_23_05_2004_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Foyle_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Foyle_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1043,7 +1043,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "432536763",
-		"downloadUrl": "lidar/Garron_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Garron_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Garron.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1054,7 +1054,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "429934529",
-		"downloadUrl": "lidar/Garron_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Garron_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Garron.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1065,7 +1065,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "192541419",
-		"downloadUrl": "lidar/Giants_Sconce_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Giants_Sconce_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Garron.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1076,7 +1076,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "186127548",
-		"downloadUrl": "lidar/Giants_Sconce_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Giants_Sconce_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Giants%20Sconce.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1087,7 +1087,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "26463661",
-		"downloadUrl": "lidar/Glenavy_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Glenavy_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Glenavy_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1098,7 +1098,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "29818094",
-		"downloadUrl": "lidar/Glenavy_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Glenavy_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Glenavy_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1109,7 +1109,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "289469178",
-		"downloadUrl": "lidar/Glynn_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Glynn_DSM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1120,7 +1120,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "285585348",
-		"downloadUrl": "lidar/Glynn_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Glynn_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Glynn.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1131,7 +1131,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "773478679",
-		"downloadUrl": "lidar/Greyabbey_Ballywalter_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Greyabbey_Ballywalter_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Greyabbey%20%26%20Ballywalter.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1142,7 +1142,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "760586151",
-		"downloadUrl": "lidar/Greyabbey_Ballywalter_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Greyabbey_Ballywalter_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Greyabbey%20%26%20Ballywalter.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1153,7 +1153,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "385612287",
-		"downloadUrl": "lidar/Inch_Abbey_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Inch_Abbey_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Inch%20Abbey.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1164,7 +1164,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "376503410",
-		"downloadUrl": "lidar/Inch_Abbey_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Inch_Abbey_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Inch%20Abbey.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1175,7 +1175,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "31257074",
-		"downloadUrl": "lidar/Keady_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Keady_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Keady_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1186,7 +1186,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "34496777",
-		"downloadUrl": "lidar/Keady_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Keady_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Keady_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1197,7 +1197,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "16233200",
-		"downloadUrl": "lidar/Killyleagh__15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Killyleagh__15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Killyleagh__15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1208,7 +1208,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "640200677",
-		"downloadUrl": "lidar/Kiltierney_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Kiltierney_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Kiltierney.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1219,7 +1219,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "613112226",
-		"downloadUrl": "lidar/Kiltierney_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Kiltierney_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Kiltierney.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1230,7 +1230,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "16812888",
-		"downloadUrl": "lidar/Larne_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Larne_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Larne_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1241,7 +1241,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "161468294",
-		"downloadUrl": "lidar/Limavady_23_05_2004_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Limavady_23_05_2004_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Limavady_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1252,7 +1252,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "157475904",
-		"downloadUrl": "lidar/Limavady_23_05_2004_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Limavady_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Limavady_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1263,7 +1263,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "2213294264",
-		"downloadUrl": "lidar/Linford_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Linford_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Linford.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1274,7 +1274,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "2199288042",
-		"downloadUrl": "lidar/Linford_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Linford_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Linford.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1285,7 +1285,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "25186634",
-		"downloadUrl": "lidar/Lisbellaw_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lisbellaw_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Lisbellaw_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1296,7 +1296,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "28076986",
-		"downloadUrl": "lidar/Lisbellaw_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lisbellaw_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Lisbellaw_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1307,7 +1307,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "495849059",
-		"downloadUrl": "lidar/Lisburn_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lisburn_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Lisburn_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1318,7 +1318,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "349255039",
-		"downloadUrl": "lidar/Londonderry_30_04_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Londonderry_30_04_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Londonderry_30_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1329,7 +1329,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "958514288",
-		"downloadUrl": "lidar/LoughNeagh_2017_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/LoughNeagh_2017_DSM.tif",
 		"opendatani_url": "https://www.opendatani.gov.uk/@department-for-infrastructure-rivers/lidar-lough-neagh-environs-2017",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1340,7 +1340,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "618455243",
-		"downloadUrl": "lidar/LoughNeagh_2017_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/LoughNeagh_2017_DTM.tif",
 		"opendatani_url": "https://www.opendatani.gov.uk/@department-for-infrastructure-rivers/lidar-lough-neagh-environs-2017",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1352,7 +1352,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "331925636",
-		"downloadUrl": "lidar/LowerBann_16_06_2014_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/LowerBann_16_06_2014_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/LowerBann_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1363,7 +1363,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "326417995",
-		"downloadUrl": "lidar/LowerBann_16_06_2014_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/LowerBann_16_06_2014_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/LowerBann_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1374,7 +1374,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "296778096",
-		"downloadUrl": "lidar/Lurgan_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lurgan_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Lurgan_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1385,7 +1385,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "1079012",
-		"downloadUrl": "lidar/Lurgan_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lurgan_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Lurgan_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1396,7 +1396,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "409806924",
-		"downloadUrl": "lidar/Lyles_Hill_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lyles_Hill_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Lyles%20Hill.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1407,7 +1407,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "400741250",
-		"downloadUrl": "lidar/Lyles_Hill_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Lyles_Hill_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Lyles%20Hill.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1418,7 +1418,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "211355240",
-		"downloadUrl": "lidar/Maghera_20_04_2009_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Maghera_20_04_2009_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Maghera_20_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1429,7 +1429,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "201246852",
-		"downloadUrl": "lidar/Maghera_20_04_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Maghera_20_04_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Maghera_20_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1440,7 +1440,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "56801379",
-		"downloadUrl": "lidar/Magherafelt_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Magherafelt_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Magherafelt_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1451,7 +1451,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "21068837",
-		"downloadUrl": "lidar/Magheramore_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Magheramore_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Magheramore.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1462,7 +1462,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "20925902",
-		"downloadUrl": "lidar/Magheramore_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Magheramore_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Magheramore.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1473,7 +1473,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "29094911",
-		"downloadUrl": "lidar/Maguiresbridge_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Maguiresbridge_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Maguiresbridge_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1484,7 +1484,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "32958637",
-		"downloadUrl": "lidar/Maguiresbridge_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Maguiresbridge_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Maguiresbridge_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1495,7 +1495,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "1164152245",
-		"downloadUrl": "lidar/Mobuoy_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Mobuoy_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Mobuoy.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1506,7 +1506,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "1149876440",
-		"downloadUrl": "lidar/Mobuoy_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Mobuoy_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Mobuoy.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1517,7 +1517,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "73925698",
-		"downloadUrl": "lidar/Moneymore_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Moneymore_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Moneymore_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1528,7 +1528,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "83096872",
-		"downloadUrl": "lidar/Moneymore_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Moneymore_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Moneymore_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1539,7 +1539,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "109584229",
-		"downloadUrl": "lidar/Mossley_05_03_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Mossley_05_03_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Mossley_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1550,7 +1550,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "123110003",
-		"downloadUrl": "lidar/Mossley_05_03_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Mossley_05_03_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Mossley_05_03_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1561,7 +1561,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "23276205",
-		"downloadUrl": "lidar/Mount_Stewart_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Mount_Stewart_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Mount%20Stewart.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1572,7 +1572,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "23276205",
-		"downloadUrl": "lidar/Mount_Stewart_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Mount_Stewart_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Mount%20Stewart.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1583,7 +1583,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "1657698604",
-		"downloadUrl": "lidar/Navan_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Navan_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Navan.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1594,7 +1594,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "1651027587",
-		"downloadUrl": "lidar/Navan_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Navan_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Navan.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1605,7 +1605,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "64546300",
-		"downloadUrl": "lidar/Newcastle_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newcastle_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newcastle_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1616,7 +1616,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "180501058",
-		"downloadUrl": "lidar/Newry_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newry_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newry_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1627,7 +1627,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "94319798",
-		"downloadUrl": "lidar/Newtownabbey_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newtownabbey_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newtownabbey_15_03_2010.zip'",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1638,7 +1638,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "255377136",
-		"downloadUrl": "lidar/Newtownards_10_06_2008_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newtownards_10_06_2008_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newtownards_10_06_2008.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1649,7 +1649,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "249518817",
-		"downloadUrl": "lidar/Newtownards_10_06_2008_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newtownards_10_06_2008_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newtownards_10_06_2008.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1660,7 +1660,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "10565509",
-		"downloadUrl": "lidar/Newtownstewart_23_05_2004_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newtownstewart_23_05_2004_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newtownstewart_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1671,7 +1671,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "10348403",
-		"downloadUrl": "lidar/Newtownstewart_23_05_2004_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Newtownstewart_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Newtownstewart_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1682,7 +1682,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "48067307",
-		"downloadUrl": "lidar/Omagh_23_05_2004_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Omagh_23_05_2004_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Omagh_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1693,7 +1693,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "45897818",
-		"downloadUrl": "lidar/Omagh_23_05_2004_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Omagh_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Omagh_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1704,7 +1704,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "47530581",
-		"downloadUrl": "lidar/Omagh_Town_11_12_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Omagh_Town_11_12_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Omagh_Town_11_12_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1715,7 +1715,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "45086089",
-		"downloadUrl": "lidar/Omagh_Town_11_12_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Omagh_Town_11_12_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Omagh_Town_11_12_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1726,7 +1726,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "107562272",
-		"downloadUrl": "lidar/Portadown_27_04_2009_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Portadown_27_04_2009_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Portadown_27_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1737,7 +1737,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "102811103",
-		"downloadUrl": "lidar/Portadown_27_04_2009_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Portadown_27_04_2009_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Portadown_27_04_2009.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1748,7 +1748,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "38697143",
-		"downloadUrl": "lidar/PortadownExtension_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/PortadownExtension_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/PortadownExtension_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1759,7 +1759,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "43746252",
-		"downloadUrl": "lidar/PortadownExtension_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/PortadownExtension_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/PortadownExtension_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1770,7 +1770,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "101041675",
-		"downloadUrl": "lidar/Raholp_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Raholp_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Raholp.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1781,7 +1781,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "100101665",
-		"downloadUrl": "lidar/Raholp_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Raholp_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Raholp.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1792,7 +1792,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "92189808",
-		"downloadUrl": "lidar/Randalstown_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Randalstown_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Randalstown_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1803,7 +1803,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "43651552",
-		"downloadUrl": "lidar/Ringreagh_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ringreagh_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Ringreagh.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1814,7 +1814,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "41546551",
-		"downloadUrl": "lidar/Ringreagh_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Ringreagh_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Ringreagh.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1825,7 +1825,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "52634891",
-		"downloadUrl": "lidar/Saintfield_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Saintfield_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Saintfield_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1836,7 +1836,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "58608047",
-		"downloadUrl": "lidar/Saintfield_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Saintfield_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Saintfield_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1847,7 +1847,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "236685664",
-		"downloadUrl": "lidar/Saul_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Saul_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Saul.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1858,7 +1858,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "234518654",
-		"downloadUrl": "lidar/Saul_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Saul_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Saul.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1869,7 +1869,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "198990795",
-		"downloadUrl": "lidar/Scrabo_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Scrabo_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Scrabo.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1880,7 +1880,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "195355877",
-		"downloadUrl": "lidar/Scrabo_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Scrabo_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Scrabo.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1891,7 +1891,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "55485966",
-		"downloadUrl": "lidar/Sion_Mills_02_02_2012_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Sion_Mills_02_02_2012_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Sion Mills_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1902,7 +1902,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "63021909",
-		"downloadUrl": "lidar/Sion_Mills_02_02_2012_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Sion_Mills_02_02_2012_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Sion Mills_02_02_2012.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1913,7 +1913,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "588882481",
-		"downloadUrl": "lidar/Slemish_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Slemish_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Slemish.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1924,7 +1924,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "205401317",
-		"downloadUrl": "lidar/Slemish_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Slemish_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Slemish.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1935,7 +1935,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "136709498",
-		"downloadUrl": "lidar/Slemish_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Slemish_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Slemish.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1946,7 +1946,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "24441863",
-		"downloadUrl": "lidar/Stonyford_16_06_2014_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Stonyford_16_06_2014_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Stonyford_16_06_2014.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1957,7 +1957,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "39681549",
-		"downloadUrl": "lidar/Strabane_23_05_2004_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Strabane_23_05_2004_DSM.tif",
 		"opendatani_url": "",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1968,7 +1968,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "38366399",
-		"downloadUrl": "lidar/Strabane_23_05_2004_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Strabane_23_05_2004_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Strabane_23_05_2004.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1979,7 +1979,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "133564240",
-		"downloadUrl": "lidar/Struell_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Struell_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Struell.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -1990,7 +1990,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "132068952",
-		"downloadUrl": "lidar/Struell_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Struell_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Struell.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2001,7 +2001,7 @@
 		"provider": "DfI, Rivers Agency, LPS",
 		"fileType": "COG Geotiff",
 		"fileSize": "18229356",
-		"downloadUrl": "lidar/Tandragee_15_03_2010_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Tandragee_15_03_2010_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Tandragee_15_03_2010.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2012,7 +2012,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "545701464",
-		"downloadUrl": "lidar/The_Dorsey_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/The_Dorsey_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/The%20Dorsey.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2023,7 +2023,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "593565828",
-		"downloadUrl": "lidar/The_Dorsey_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/The_Dorsey_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/The%20Dorsey.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2034,7 +2034,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "199136781",
-		"downloadUrl": "lidar/Tirgoland_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Tirgoland_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Tirgoland.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2045,7 +2045,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "198598158",
-		"downloadUrl": "lidar/Tirgoland_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Tirgoland_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Tirgoland.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2056,7 +2056,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "218286514",
-		"downloadUrl": "lidar/Tullaghoge_DSM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Tullaghoge_DSM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Tirgoland.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
@@ -2067,7 +2067,7 @@
 		"provider": "DfC, Historic Environment Division",
 		"fileType": "COG Geotiff",
 		"fileSize": "214499657",
-		"downloadUrl": "lidar/Tullaghoge_DTM.tif",
+		"downloadUrl": "https://better-open-data.com/lidar/Tullaghoge_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/archaeologylidar/Tullaghoge.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	}
