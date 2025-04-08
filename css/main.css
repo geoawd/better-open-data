@@ -1,0 +1,379 @@
+/* Map styles */
+#map {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.map-control {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.layer-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.layer-container {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    max-height: 60vh;
+    width: 350px;
+    overflow-y: auto;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.layer-container.hidden {
+    transform: translateX(calc(100% + 10px));
+    opacity: 0;
+    pointer-events: none;
+}
+
+.layer-search {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #dee2e6;
+    z-index: 1;
+}
+
+.layer-search input {
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.layer-list-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+table.controls {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    min-width: 300px;
+    margin: 0;
+}
+
+table.controls td {
+    padding: 2px 5px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table.controls input[type="range"] {
+    width: 100px;
+}
+
+.ol-zoom {
+    left: 8px;
+    top: 8px;
+}
+
+.layer-item {
+    padding: 6px 12px 6px 8px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.layer-item .layer-name {
+    cursor: pointer;
+    user-select: none;
+}
+
+.layer-item.active {
+    background-color: #e9ecef;
+}
+
+.layer-item.active .layer-name {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+.layer-item:hover {
+    background-color: #f8f9fa;
+}
+
+.layer-item.active:hover {
+    background-color: #dee2e6;
+}
+
+.layer-item .form-check {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+.layer-item .form-check-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 8px;
+    flex: 1;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+.layer-item .form-check-input {
+    position: static;
+    margin-left: 0;
+}
+
+.layer-description {
+    padding: 12px;
+    margin: 0 -12px -6px -8px;
+    font-size: 0.9em;
+    color: #666;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.layer-badges {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.layer-item:last-child {
+    border-bottom: none;
+}
+
+.zoom-to-layer {
+    color: #666;
+    min-width: 20px;
+    height: 20px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom-to-layer:hover {
+    color: #000;
+}
+
+.layer-checkbox {
+    min-width: 16px;
+    cursor: pointer;
+}
+
+.layer-item .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.turn-off-all-container {
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #dee2e6;
+    margin-top: auto;
+}
+
+.layer-info-section {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #dee2e6;
+}
+
+.layer-info-section h6 {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.download-section {
+    padding: 12px;
+    margin: 12px -12px -12px -12px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+}
+
+.download-section .btn {
+    width: 100%;
+    text-align: left;
+}
+
+/* Common styles */
+.hero {
+    background-color: var(--bs-primary);
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.card {
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-sections {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.clickable-pill {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.clickable-pill:hover {
+    opacity: 0.8;
+}
+
+.active-filter-pill {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.sortable:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+/* Data formats page specific styles */
+.format-card {
+    margin-bottom: 2rem;
+}
+
+.format-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* About page specific styles */
+.about-section {
+    margin-bottom: 3rem;
+}
+
+.tech-stack-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tech-stack-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 40px;
+    text-align: center;
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.bg-dark {
+    background-color: #212529 !important;
+}
+
+.navbar.bg-dark .nav-link,
+.navbar.bg-dark .navbar-brand {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar.bg-dark .nav-link:hover,
+.navbar.bg-dark .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar.bg-dark #themeSwitcher {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar.bg-dark #themeSwitcher:hover {
+    color: #fff;
+}
+
+#themeSwitcher {
+    color: inherit;
+}
+
+th.sortable {
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+th.sortable::after {
+    content: "↕";
+    position: absolute;
+    right: 8px;
+    opacity: 0.5;
+}
+
+th.sortable.sort-asc::after {
+    content: "↑";
+    opacity: 1;
+}
+
+th.sortable.sort-desc::after {
+    content: "↓";
+    opacity: 1;
+}
+
+.table td {
+    vertical-align: middle;
+}

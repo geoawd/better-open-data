@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Glynn_DSM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          339821.805,
+          398956.206
+        ],
+        [
+          339821.805,
+          401754.006
+        ],
+        [
+          342517.005,
+          401754.006
+        ],
+        [
+          342517.005,
+          398956.206
+        ],
+        [
+          339821.805,
+          398956.206
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    339821.805,
+    398956.206,
+    342517.005,
+    401754.006
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.064382Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Glynn_DSM/Glynn_DSM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Glynn_DSM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

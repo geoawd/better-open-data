@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Limavady_23_05_2004_DTM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          263000.0,
+          420000.0
+        ],
+        [
+          263000.0,
+          436000.0
+        ],
+        [
+          271000.0,
+          436000.0
+        ],
+        [
+          271000.0,
+          420000.0
+        ],
+        [
+          263000.0,
+          420000.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    263000.0,
+    420000.0,
+    271000.0,
+    436000.0
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.105260Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Limavady_23_05_2004_DTM/Limavady_23_05_2004_DTM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Limavady_23_05_2004_DTM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

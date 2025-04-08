@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Dunmurry_04_04_2007_DTM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          327000.0,
+          366000.0
+        ],
+        [
+          327000.0,
+          371000.0
+        ],
+        [
+          330000.0,
+          371000.0
+        ],
+        [
+          330000.0,
+          366000.0
+        ],
+        [
+          327000.0,
+          366000.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    327000.0,
+    366000.0,
+    330000.0,
+    371000.0
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.046816Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunmurry_04_04_2007_DTM/Dunmurry_04_04_2007_DTM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Dunmurry_04_04_2007_DTM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

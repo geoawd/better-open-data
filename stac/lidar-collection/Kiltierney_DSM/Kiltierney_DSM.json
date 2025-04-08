@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Kiltierney_DSM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          221340.323,
+          361715.044
+        ],
+        [
+          221340.323,
+          363376.169
+        ],
+        [
+          222890.698,
+          363376.169
+        ],
+        [
+          222890.698,
+          361715.044
+        ],
+        [
+          221340.323,
+          361715.044
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    221340.323,
+    361715.044,
+    222890.698,
+    363376.169
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.085232Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Kiltierney_DSM/Kiltierney_DSM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Kiltierney_DSM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

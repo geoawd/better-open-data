@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Bangor_04_04_2007_DTM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          338000.0,
+          377000.0
+        ],
+        [
+          338000.0,
+          385000.0
+        ],
+        [
+          356000.0,
+          385000.0
+        ],
+        [
+          356000.0,
+          377000.0
+        ],
+        [
+          338000.0,
+          377000.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    338000.0,
+    377000.0,
+    356000.0,
+    385000.0
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.084707Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Bangor_04_04_2007_DTM/Bangor_04_04_2007_DTM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Bangor_04_04_2007_DTM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

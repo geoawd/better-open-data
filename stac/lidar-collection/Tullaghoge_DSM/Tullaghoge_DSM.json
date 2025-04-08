@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Tullaghoge_DSM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          280869.80000000005,
+          373009.0
+        ],
+        [
+          280869.80000000005,
+          374786.2
+        ],
+        [
+          283060.80000000005,
+          374786.2
+        ],
+        [
+          283060.80000000005,
+          373009.0
+        ],
+        [
+          280869.80000000005,
+          373009.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    280869.80000000005,
+    373009.0,
+    283060.80000000005,
+    374786.2
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.097880Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Tullaghoge_DSM/Tullaghoge_DSM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Tullaghoge_DSM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Garron_DSM",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          328000.0,
+          421750.0
+        ],
+        [
+          328000.0,
+          424750.0
+        ],
+        [
+          330500.0,
+          424750.0
+        ],
+        [
+          330500.0,
+          421750.0
+        ],
+        [
+          328000.0,
+          421750.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    328000.0,
+    421750.0,
+    330500.0,
+    424750.0
+  ],
+  "properties": {
+    "proj:code": "EPSG:29902",
+    "datetime": "2025-04-06T20:02:08.107383Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/Garron_DSM/Garron_DSM.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "cog": {
+      "href": "https://better-open-data.com/lidar/Garron_DSM.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "lidar-collection"
+}

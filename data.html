@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Open Data</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Better Open Data
+            </a>
+            <div class="d-flex align-items-center order-lg-2">
+                <div class="me-3">
+                    <button class="btn btn-link nav-link px-0 py-2" id="themeSwitcher">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                </div>
+                <a href="https://github.com/geoawd/" class="nav-link px-2" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stac.html">STAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-formats.html">Data Formats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container my-5">
+
+        <h2 class="mb-4">Data <span id="datasetCount" class="text-muted fs-5 fw-normal"></span></h2>
+        <p>Most of the data that is provided on this website is sourced from <a target="blank" href="https://www.opendatani.gov.uk">Open Data NI</a>, and is predominently LiDAR data.</p>
+        <p>The data is used under the <a target="blank" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3 (OGLV3)</a>.</p>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" id="search" class="form-control" placeholder="Search datasets...">
+                    <button class="btn btn-outline-secondary" type="button" id="clearFilters">
+                        Clear Filters
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-3 ms-auto">
+                <div class="input-group">
+                    <select class="form-select" id="itemsPerPage">
+                        <option value="4">4 per page</option>
+                        <option selected="16">16 per page</option>
+                        <option value="32">32 per page</option>
+                        <option value="64">64 per page</option>
+                        <option value="128">128 per page</option>
+                        <option value="256">256 per page</option>
+                                        </select>
+                </div>
+            </div>
+        </div>
+        <p>You can filter the datasets by clicking on the categories, providers and data formats.</p>
+        <p>Click on the <i class="bi bi-map"></i> map icon to view the data in an Open Layers map. Click on the <i class="bi bi-clipboard"></i> clipboard icon to copy the url to add to desktop GIS software.</p>
+
+        <!-- Add new filter pills section -->
+        <div class="filter-sections mb-4">
+            <div class="filter-section mb-2">
+                <small class="text-muted">Categories:</small>
+                <div id="categoryFilters" class="d-flex flex-wrap gap-2 mt-1"></div>
+            </div>
+            <div class="filter-section mb-2">
+                <small class="text-muted">Providers:</small>
+                <div id="providerFilters" class="d-flex flex-wrap gap-2 mt-1"></div>
+            </div>
+            <div class="filter-section mb-2">
+                <small class="text-muted">File Types:</small>
+                <div id="fileTypeFilters" class="d-flex flex-wrap gap-2 mt-1"></div>
+            </div>
+        </div>
+
+        <!-- Add new active filters section -->
+        <div class="active-filters mb-3" id="activeFilters" style="display: none;">
+            <div class="d-flex align-items-center gap-2">
+                <small class="text-muted">Active filters:</small>
+                <div id="activeFilterPills" class="d-flex flex-wrap gap-2">
+                    <!-- Active filter pills will be added here -->
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="cardContainer" class="row g-4">
+            <!-- Cards will be populated here -->
+        </div>
+
+        <nav aria-label="Dataset pagination">
+            <ul class="pagination justify-content-center" id="pagination">
+                <!-- Pagination links will be populated here -->
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">Better Open Data: Converting <a target="blank" href="https://www.opendatani.gov.uk">Open Data NI</a> into cloud-native formats.</a></p>
+                    <p class="mb-0">Feel free to suggest data that you want to see in cloud-native formats.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/geoawd/" class="text-dark me-3"><i class="bi bi-github"></i></a>
+                    <a href="mailto:awdonald@hotmail.com" class="text-dark"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.4.0/dist/ol.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/geotiff@2.1.3/dist-browser/geotiff.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/proj4@2.9.0/dist/proj4.js"></script>
+    <script src="js/combined.js"></script>
+
+</body>
+</html>

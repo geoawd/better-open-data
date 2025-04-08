@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Open Data</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Better Open Data
+            </a>
+            <div class="d-flex align-items-center order-lg-2">
+                <div class="me-3">
+                    <button class="btn btn-link nav-link px-0 py-2" id="themeSwitcher">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                </div>
+                <a href="https://github.com/geoawd/" class="nav-link px-2" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stac.html">STAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-formats.html">Data Formats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container my-5">
+        <h2 class="mb-4">About <span id="datasetCount" class="text-muted fs-5 fw-normal"></span></h2>
+        <p>This project began as I wanted to have easy access to data that I find useful in a modern cloud native format.</p>
+        <h3>Extent of data coverage</h3>
+        <p>Most of the data covers Northern Ireland, is sourced from <a target="blank" href="https://www.opendatani.gov.uk">Open Data NI</a>, and is predominently LiDAR or bathymetry data.</p>
+        <h3>Data format</h3>
+        <p>The data is provided as <a target="blank" href="https://cogeo.org">Cloud Optimized GeoTIFF</a>; this format is a <a target="blank" href="https://www.ogc.org/announcement/cloud-optimized-geotiff-cog-published-as-official-ogc-standard/">relatively new OGC standard adopted in October 2023</a>. </p>
+        <h4>Why Cloud Optimised GeoTIFF?</h4>
+        <p>There is more information on Cloud Optimised GeoTIFF? on the <a href="data-formats.html">data formats</a>page. For further information on the format and why you should store and serve your raster data in Cloud Optimized GeoTIFF format then the <a target="blank" href="https://cogeo.org">https://cogeo.org</a> will provide you with all the information you need.</p>
+        <h3>Data processing</h3>
+        <p>The python code to convert data can be found on <a target="blank" href="https://github.com/geoawd/better-open-data-processing">github</a>. This code is provided as-is. If you just want to get started with Cloud Optimized GeoTIFFs, the following is an example of how to convert a file (e.g. a TIFF, VRT etc) into a COG with GDAL.</p>
+        <code><pre>
+            import os
+            from osgeo import gdal
+
+            input = r'input.vrt'
+            output = r'output_file.tif'
+            translate_options = gdal.TranslateOptions(format='COG', creationOptions=["COMPRESS=DEFLATE", "NUM_THREADS=ALL_CPUS"],
+                                                            outputSRS='EPSG:29902')
+                    
+            gdal.Translate(output, input, options=translate_options)
+        </pre></code>
+        
+        <h3>Terms of use</h3>
+        <p>This site is provided as-is. It may not have 100% uptime; I might temporarily break things while trying to improve the map viewers or the data. If you have any suggestions please get in touch.
+            The <a href="https://github.com/geoawd/better-open-data">repository for the page is on github</a></p>
+    </div>  
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">Better Open Data: Converting <a target="blank" href="https://www.opendatani.gov.uk">Open Data NI</a> into cloud-native formats.</a></p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/geoawd/" class="text-dark me-3"><i class="bi bi-github"></i></a>
+                    <a href="mailto:awdonald@hotmail.com" class="text-dark"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

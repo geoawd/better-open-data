@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .preview {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .file-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .file-input label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .file-input label:hover {
+            background-color: #45a049;
+        }
+        
+        .file-input input {
+            display: none;
+        }
+        
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .game-container {
+                flex-direction: row;
+            }
+        }
+        
+        .pieces-area {
+            flex: 1;
+            min-height: 300px;
+            background-color: #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            position: relative;
+        }
+        
+        .puzzle-grid {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+        
+        .grid-cell {
+            position: absolute;
+            border: 1px solid #ddd;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        
+        .puzzle-piece {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: move;
+            user-select: none;
+            touch-action: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        
+        .puzzle-piece.dragging {
+            z-index: 100;
+            transform: scale(1.05) !important;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .pieces-area .puzzle-piece {
+            position: relative;
+            transform: scale(0.5);
+            transform-origin: center;
+            margin: auto;
+        }
+        
+        .congratulations {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        
+        .congratulations.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .congratulations-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 90%;
+        }
+        
+        .congratulations h2 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        
+        .congratulations p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .congratulations button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .congratulations button:hover {
+            background-color: #45a049;
+        }
+        
+        .instructions {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 5px;
+        }
+        
+        .piece-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h3>How to Play</h3>
+        <ol>
+            <li>Upload an image to start the puzzle.</li>
+            <li>Drag pieces from the left area and drop them into the correct positions on the right grid.</li>
+            <li>Use the preview image at the top right as a reference.</li>
+            <li>Complete the puzzle as quickly as you can!</li>
+        </ol>
+    </div>
+
+    <div class="header">
+        <div class="timer">Time: 0:00</div>
+        <div class="file-input">
+            <label for="image-upload">Upload Image</label>
+            <input type="file" id="image-upload" accept="image/*">
+        </div>
+        <div class="preview">
+            <img id="preview-image" src="/api/placeholder/150/150" alt="Preview">
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="pieces-area" id="pieces-area"></div>
+        <div class="puzzle-grid" id="puzzle-grid"></div>
+    </div>
+
+    <div class="congratulations" id="congratulations">
+        <div class="congratulations-content">
+            <h2>Congratulations!</h2>
+            <p>You completed the puzzle in <span id="completion-time">0:00</span>!</p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script>
+        // Game variables
+        let gridSize = 4;
+        let pieceWidth, pieceHeight;
+        let pieces = [];
+        let cells = [];
+        let draggedPiece = null;
+        let startX, startY, startLeft, startTop;
+        let startParent;
+        let timer, seconds = 0, timerRunning = false;
+        let gameStarted = false;
+        
+        // DOM elements
+        const uploadInput = document.getElementById('image-upload');
+        const previewImage = document.getElementById('preview-image');
+        const piecesArea = document.getElementById('pieces-area');
+        const puzzleGrid = document.getElementById('puzzle-grid');
+        const timerElement = document.querySelector('.timer');
+        const congratsElement = document.getElementById('congratulations');
+        const completionTimeElement = document.getElementById('completion-time');
+        const playAgainButton = document.getElementById('play-again');
+        
+        // Event listeners
+        uploadInput.addEventListener('change', handleImageUpload);
+        playAgainButton.addEventListener('click', resetGame);
+        
+        // Handle image upload
+        function handleImageUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                previewImage.src = event.target.result;
+                initializePuzzle(event.target.result);
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        // Fisher-Yates shuffle algorithm
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+        
+        // Initialize the puzzle
+        function initializePuzzle(imageUrl) {
+            resetGame();
+            
+            // Create an image element to get dimensions
+            const img = new Image();
+            img.onload = function() {
+                // Calculate piece dimensions
+                const gridWidth = puzzleGrid.clientWidth;
+                const gridHeight = puzzleGrid.clientHeight;
+                
+                pieceWidth = gridWidth / gridSize;
+                pieceHeight = gridHeight / gridSize;
+                
+                // Create grid cells
+                puzzleGrid.innerHTML = '';
+                cells = [];
+                
+                for (let y = 0; y < gridSize; y++) {
+                    for (let x = 0; x < gridSize; x++) {
+                        const cell = document.createElement('div');
+                        cell.className = 'grid-cell';
+                        cell.style.width = pieceWidth + 'px';
+                        cell.style.height = pieceHeight + 'px';
+                        cell.style.left = (x * pieceWidth) + 'px';
+                        cell.style.top = (y * pieceHeight) + 'px';
+                        cell.dataset.x = x;
+                        cell.dataset.y = y;
+                        
+                        puzzleGrid.appendChild(cell);
+                        cells.push(cell);
+                    }
+                }
+                
+                // Create puzzle pieces
+                pieces = [];
+                piecesArea.innerHTML = '';
+                
+                for (let y = 0; y < gridSize; y++) {
+                    for (let x = 0; x < gridSize; x++) {
+                        const piece = document.createElement('div');
+                        piece.className = 'puzzle-piece';
+                        piece.style.width = pieceWidth + 'px';
+                        piece.style.height = pieceHeight + 'px';
+                        piece.style.backgroundImage = `url(${imageUrl})`;
+                        piece.style.backgroundSize = `${gridWidth}px ${gridHeight}px`;
+                        piece.style.backgroundPosition = `-${x * pieceWidth}px -${y * pieceHeight}px`;
+                        
+                        piece.dataset.correctX = x;
+                        piece.dataset.correctY = y;
+                        
+                        // Set up dragging events
+                        piece.addEventListener('mousedown', startDrag);
+                        piece.addEventListener('touchstart', startDrag, { passive: false });
+                        
+                        pieces.push(piece);
+                    }
+                }
+                
+                // Randomly place one piece in the correct position
+                const randomIndex = Math.floor(Math.random() * pieces.length);
+                const randomPiece = pieces[randomIndex];
+                const correctX = parseInt(randomPiece.dataset.correctX);
+                const correctY = parseInt(randomPiece.dataset.correctY);
+                
+                randomPiece.style.left = (correctX * pieceWidth) + 'px';
+                randomPiece.style.top = (correctY * pieceHeight) + 'px';
+                randomPiece.dataset.placed = 'true';
+                puzzleGrid.appendChild(randomPiece);
+                
+                // Remove the placed piece from the array
+                pieces.splice(randomIndex, 1);
+                
+                // Shuffle remaining pieces
+                shuffleArray(pieces);
+                
+                // Add remaining pieces to the pieces area in grid format
+                for (let i = 0; i < pieces.length; i++) {
+                    const pieceContainer = document.createElement('div');
+                    pieceContainer.className = 'piece-container';
+                    
+                    pieces[i].style.position = 'absolute';
+                    pieces[i].style.top = '50%';
+                    pieces[i].style.left = '50%';
+                    pieces[i].style.transform = 'translate(-50%, -50%) scale(0.5)';
+                    
+                    pieceContainer.appendChild(pieces[i]);
+                    piecesArea.appendChild(pieceContainer);
+                }
+                
+                // Add the placed piece back to pieces array for tracking
+                pieces.push(randomPiece);
+                
+                // Set up global drag events
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('touchmove', drag, { passive: false });
+                document.addEventListener('mouseup', endDrag);
+                document.addEventListener('touchend', endDrag);
+                
+                // Start the timer
+                startTimer();
+                gameStarted = true;
+            };
+            img.src = imageUrl;
+        }
+        
+        // Start dragging a piece
+        function startDrag(e) {
+            e.preventDefault();
+            
+            draggedPiece = this;
+            draggedPiece.classList.add('dragging');
+            startParent = draggedPiece.parentElement;
+            
+            // Get initial position
+            const eventX = e.clientX || (e.touches && e.touches[0].clientX);
+            const eventY = e.clientY || (e.touches && e.touches[0].clientY);
+            
+            startX = eventX;
+            startY = eventY;
+            
+            // Add the piece directly to body for unrestricted movement during drag
+            const rect = draggedPiece.getBoundingClientRect();
+            
+            // If coming from pieces area (inside a container)
+            if (startParent.classList.contains('piece-container')) {
+                // Move it to the body for dragging
+                document.body.appendChild(draggedPiece);
+                
+                // Keep the original visual position
+                draggedPiece.style.position = 'fixed';
+                draggedPiece.style.left = rect.left + 'px';
+                draggedPiece.style.top = rect.top + 'px';
+                draggedPiece.style.transform = 'scale(0.5)';
+                draggedPiece.style.zIndex = '1000';
+            } 
+            // If coming from puzzle grid
+            else if (startParent === puzzleGrid) {
+                // Move it to the body for dragging
+                document.body.appendChild(draggedPiece);
+                
+                // Keep the original visual position
+                draggedPiece.style.position = 'fixed';
+                draggedPiece.style.left = rect.left + 'px';
+                draggedPiece.style.top = rect.top + 'px';
+                draggedPiece.style.transform = 'none';
+                draggedPiece.style.zIndex = '1000';
+            }
+            
+            startLeft = parseInt(draggedPiece.style.left);
+            startTop = parseInt(draggedPiece.style.top);
+        }
+        
+        // Drag the piece
+        function drag(e) {
+            if (!draggedPiece) return;
+            
+            e.preventDefault();
+            
+            const eventX = e.clientX || (e.touches && e.touches[0].clientX);
+            const eventY = e.clientY || (e.touches && e.touches[0].clientY);
+            
+            const deltaX = eventX - startX;
+            const deltaY = eventY - startY;
+            
+            draggedPiece.style.left = (startLeft + deltaX) + 'px';
+            draggedPiece.style.top = (startTop + deltaY) + 'px';
+        }
+        
+        // End dragging and check for drop
+        function endDrag(e) {
+            if (!draggedPiece) return;
+            
+            draggedPiece.classList.remove('dragging');
+            
+            // Get the center position of the dragged piece
+            const rect = draggedPiece.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            
+            // Check if the piece is over the puzzle grid
+            const gridRect = puzzleGrid.getBoundingClientRect();
+            const piecesAreaRect = piecesArea.getBoundingClientRect();
+            
+            if (
+                centerX >= gridRect.left && 
+                centerX <= gridRect.right && 
+                centerY >= gridRect.top && 
+                centerY <= gridRect.bottom
+            ) {
+                // Find the closest cell
+                let closestCell = null;
+                let minDistance = Infinity;
+                
+                for (const cell of cells) {
+                    const cellRect = cell.getBoundingClientRect();
+                    const cellCenterX = cellRect.left + cellRect.width / 2;
+                    const cellCenterY = cellRect.top + cellRect.height / 2;
+                    
+                    const distance = Math.hypot(centerX - cellCenterX, centerY - cellCenterY);
+                    
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        closestCell = cell;
+                    }
+                }
+                
+                if (closestCell) {
+                    // Check if the cell already has a piece
+                    let cellIsFree = true;
+                    const cellX = parseInt(closestCell.dataset.x);
+                    const cellY = parseInt(closestCell.dataset.y);
+                    
+                    for (const piece of pieces) {
+                        if (
+                            piece !== draggedPiece && 
+                            piece.parentElement === puzzleGrid && 
+                            parseInt(piece.style.left) === cellX * pieceWidth && 
+                            parseInt(piece.style.top) === cellY * pieceHeight
+                        ) {
+                            // Cell is occupied
+                            cellIsFree = false;
+                            break;
+                        }
+                    }
+                    
+                    if (cellIsFree) {
+                        // Place the piece in the cell
+                        draggedPiece.style.position = 'absolute';
+                        draggedPiece.style.left = (cellX * pieceWidth) + 'px';
+                        draggedPiece.style.top = (cellY * pieceHeight) + 'px';
+                        draggedPiece.style.transform = 'none';
+                        draggedPiece.style.zIndex = '';
+                        puzzleGrid.appendChild(draggedPiece);
+                        
+                        // Check if the piece is in the correct position
+                        const correctX = parseInt(draggedPiece.dataset.correctX);
+                        const correctY = parseInt(draggedPiece.dataset.correctY);
+                        
+                        draggedPiece.dataset.placed = (cellX === correctX && cellY === correctY) ? 'true' : 'false';
+                        
+                        // Check if the puzzle is complete
+                        checkCompletion();
+                    } else {
+                        // Move to pieces area
+                        returnToPiecesArea();
+                    }
+                }
+            } else if (
+                centerX >= piecesAreaRect.left && 
+                centerX <= piecesAreaRect.right && 
+                centerY >= piecesAreaRect.top && 
+                centerY <= piecesAreaRect.bottom
+            ) {
+                // Dropped in the pieces area
+                returnToPiecesArea();
+            } else {
+                // Dropped outside valid areas, return to original position
+                if (startParent === puzzleGrid) {
+                    // If it was in the grid, return it there
+                    const x = parseInt(draggedPiece.dataset.correctX);
+                    const y = parseInt(draggedPiece.dataset.correctY);
+                    draggedPiece.style.position = 'absolute';
+                    draggedPiece.style.left = (x * pieceWidth) + 'px';
+                    draggedPiece.style.top = (y * pieceHeight) + 'px';
+                    draggedPiece.style.transform = 'none';
+                    draggedPiece.style.zIndex = '';
+                    puzzleGrid.appendChild(draggedPiece);
+                } else {
+                    // Otherwise, return to pieces area
+                    returnToPiecesArea();
+                }
+            }
+            
+            draggedPiece = null;
+        }
+        
+        // Helper function to return a piece to the pieces area
+        function returnToPiecesArea() {
+            // Find an empty container or create a new one
+            let emptyContainer = null;
+            
+            for (const container of piecesArea.querySelectorAll('.piece-container')) {
+                if (container.childElementCount === 0) {
+                    emptyContainer = container;
+                    break;
+                }
+            }
+            
+            if (!emptyContainer) {
+                emptyContainer = document.createElement('div');
+                emptyContainer.className = 'piece-container';
+                piecesArea.appendChild(emptyContainer);
+            }
+            
+            draggedPiece.style.position = 'absolute';
+            draggedPiece.style.top = '50%';
+            draggedPiece.style.left = '50%';
+            draggedPiece.style.transform = 'translate(-50%, -50%) scale(0.5)';
+            draggedPiece.style.zIndex = '';
+            emptyContainer.appendChild(draggedPiece);
+            draggedPiece.dataset.placed = 'false';
+        }
+        
+        // Check if the puzzle is complete
+        function checkCompletion() {
+            let complete = true;
+            
+            for (const piece of pieces) {
+                if (piece.parentElement !== puzzleGrid || piece.dataset.placed !== 'true') {
+                    complete = false;
+                    break;
+                }
+            }
+            
+            if (complete && gameStarted) {
+                stopTimer();
+                showCongratulations();
+            }
+        }
+        
+        // Timer functions
+        function startTimer() {
+            if (timerRunning) return;
+            
+            seconds = 0;
+            timerElement.textContent = 'Time: 0:00';
+            timerRunning = true;
+            
+            timer = setInterval(function() {
+                seconds++;
+                const minutes = Math.floor(seconds / 60);
+                const paddedSeconds = String(seconds % 60).padStart(2, '0');
+                timerElement.textContent = `Time: ${minutes}:${paddedSeconds}`;
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            clearInterval(timer);
+            timerRunning = false;
+        }
+        
+        // Show congratulations message
+        function showCongratulations() {
+            const minutes = Math.floor(seconds / 60);
+            const paddedSeconds = String(seconds % 60).padStart(2, '0');
+            completionTimeElement.textContent = `${minutes}:${paddedSeconds}`;
+            
+            congratsElement.classList.add('show');
+        }
+        
+        // Reset the game
+        function resetGame() {
+            stopTimer();
+            seconds = 0;
+            timerElement.textContent = 'Time: 0:00';
+            
+            puzzleGrid.innerHTML = '';
+            piecesArea.innerHTML = '';
+            
+            pieces = [];
+            cells = [];
+            draggedPiece = null;
+            
+            congratsElement.classList.remove('show');
+            gameStarted = false;
+        }
+        
+        // Make sure the grid is responsive
+        window.addEventListener('resize', function() {
+            if (pieces.length > 0) {
+                // Reinitialize puzzle with the same image
+                initializePuzzle(previewImage.src);
+            }
+        });
+        
+        // Initialize with placeholder
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up the puzzle grid with appropriate dimensions
+            const resizePuzzleGrid = () => {
+                if (window.innerWidth < 768) {
+                    puzzleGrid.style.height = puzzleGrid.clientWidth + 'px';
+                }
+            };
+            
+            resizePuzzleGrid();
+            window.addEventListener('resize', resizePuzzleGrid);
+        });
+    </script>
+</body>
+</html>

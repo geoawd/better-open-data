@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Open Data</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Better Open Data
+            </a>
+            <div class="d-flex align-items-center order-lg-2">
+                <div class="me-3">
+                    <button class="btn btn-link nav-link px-0 py-2" id="themeSwitcher">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                </div>
+                <a href="https://github.com/geoawd/" class="nav-link px-2" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stac.html">STAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-formats.html">Data Formats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container my-5">
+        <h2 class="mb-4">Data Formats <span id="datasetCount" class="text-muted fs-5 fw-normal"></span></h2>
+        <h3>Introduction to Cloud-Optimized GeoTIFFs (COGs)</h3>
+        <p>Cloud-Optimized GeoTIFFs (COGs) are an evolution of the standard GeoTIFF format, designed to improve the efficiency of accessing and processing large geospatial raster datasets over the internet. By leveraging internal tiling and efficient data compression, COGs enable fast, scalable, and cost-effective access to geospatial imagery without requiring full downloads.</p>
+
+        <p>COGs conform to the TIFF standard while incorporating additional optimizations such as overviews (pyramids) and proper internal organization to support HTTP range requests. This makes them ideal for cloud-based geospatial workflows, allowing users to stream only the necessary portions of a dataset instead of transferring entire files. COGs are widely adopted in modern GIS applications, remote sensing platforms, and web mapping services, supported by open-source tools such as <a target="blank" href="https://gdal.org/en/stable/drivers/raster/cog.html">GDAL</a>, <a target="blank" href="https://rasterio.readthedocs.io/en/stable/quickstart.html">Rasterio</a>, and <a target="blank" href="https://qgis.org">QGIS</a>.</p></COGs>
+            
+            <p>By adhering to open standards and cloud-native principles, COGs improve accessibility, reduce storage and bandwidth costs, and streamline integration with cloud computing and serverless geospatial workflows.</p>
+<h3>Accessing Cloud-Optimized GeoTIFFs (COGs) in Geospatial Software</h3>
+<p>COGs can be accessed seamlessly in many geospatial software applications without requiring full downloads. Tools like <a target="blank" href="https://gdal.org/en/stable/drivers/raster/cog.html">GDAL</a>, <a target="blank" href="https://rasterio.readthedocs.io/en/stable/quickstart.html">Rasterio</a>, <a target="blank" href="https://qgis.org">QGIS</a>, and <a target="blank" href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview">ArcGIS</a> support direct streaming of COGs using HTTP range requests, enabling efficient access to specific image tiles or bands.</p>
+<ul>
+  <li><a target="blank" href="https://gdal.org/en/stable/drivers/raster/cog.html">GDAL</a>: Use gdalinfo or gdal_translate with a URL (/vsicurl/) to read COGs remotely.</li>
+  <li><a target="blank" href="https://rasterio.readthedocs.io/en/stable/quickstart.html">Rasterio</a>: Open COGs with the rasterio.open() function, specifying the URL.</li>
+  <li><a target="blank" href="https://qgis.org">QGIS</a>: Load COGs as raster layers using the "Add Raster Layer" tool and providing the URL.</li>
+  <li><a target="blank" href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview">ArcGIS</a>: ArcGIS Pro and ArcGIS Online can access COGs via direct URL links or as imagery layers.</li>
+</ul>
+   <p>
+    These tools optimize access by only requesting the necessary portions of the data, making COGs ideal for cloud-based geospatial analysis.
+</p>
+
+<h3>COG Compression Methods</h3>
+<p>COGs support various compression methods to balance storage efficiency and performance. Common options include:</p>
+<ul>
+<li>DEFLATE: Lossless compression that reduces file size while preserving data integrity.</li>
+<li>LZW: Another lossless option, effective for compressing raster data with repeating values.</li>
+<li>ZSTD: A newer, efficient lossless compression with better speed and ratio than DEFLATE.</li>
+<li>JPEG: Lossy compression suitable for RGB imagery, significantly reducing file size but not ideal for analytical data.</li>
+</ul>
+
+        </div>
+
+        <footer class="bg-light mt-5 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">Better Open Data: Converting <a target="blank" href="https://www.opendatani.gov.uk">Open Data NI</a> into cloud-native formats.</a></p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a href="https://github.com/geoawd/" class="text-dark me-3"><i class="bi bi-github"></i></a>
+                        <a href="mailto:awdonald@hotmail.com" class="text-dark"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

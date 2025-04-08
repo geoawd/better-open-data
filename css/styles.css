@@ -1,0 +1,108 @@
+/* Custom styles for Better Open Data website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.table-container {
+    margin: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.file-type-pill {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.btn-group .btn.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+#cardContainer {
+    margin-top: 1rem;
+}
+
+.card .badge {
+    margin: 0.2rem;
+}
+
+.active-filter-pill {
+    display: inline-flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.active-filter-pill .badge {
+    margin: 0;
+}
+
+.active-filter-pill button {
+    color: #6c757d;
+}
+
+.active-filter-pill button:hover {
+    color: #dc3545;
+}
+
+/* Add spacing before pagination */
+.pagination {
+    margin-top: 2rem;
+}

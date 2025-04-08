@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Open Data</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Better Open Data
+            </a>
+            <div class="d-flex align-items-center order-lg-2">
+                <div class="me-3">
+                    <button class="btn btn-link nav-link px-0 py-2" id="themeSwitcher">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                </div>
+                <a href="https://github.com/geoawd/" class="nav-link px-2" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stac.html">STAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-formats.html">Data Formats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container my-5">
+        <h2 class="mb-4">STAC<span id="STAC" class="text-muted fs-5 fw-normal"></span></h2>
+        <p><a target="blank" href="https://stacspec.org/en">STAC</a> stands for SpatioTemporal Asset Catalog. It is a language to describe geospatial information, making it easier to work with, index, and discover.  It is a standardised way to organise and access any kind of geospatial data, whether it's satellite imagery, drone footage, lidar, or bathymetry data.</p>
+
+        <h3>Working with STAC catalogs in QGIS</h3>
+        <p><a target="blank" href="https://www.lutraconsulting.co.uk/blogs/stac-in-qgis">STAC support in QGIS was implemented by Lutra Consulting</a>. To use STAC in the QGIS browser you will need QGIS 3.40 (for basic funcionality) but preferrably 3.42 or later for filtering of STAC catalogs. At present the better-open-data STAC is not filterable so you'll be good with QGIS 3.40 or greater.</p>
+
+        <h3>Adding a STAC connection</h3>
+        <p>You can add a new STAC connection either through the Browser Panel or Data Source Manager:</p>
+<ul>
+<li>From the Browser Panel, right click on STAC and select New STAC Connection</li>
+<li>For the Name type <code>better-open-data</code></li>
+<li>For URL type <code>https://better-open-data.com/stac/catalog.json</code></li>
+</ul>
+<p>As the data in the better-open-data STAC are Cloud Optimized format (COG), you can drag and drop items into QGIS canvas to view them. Enjoy!</p>
+    </div>  
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">Better Open Data: Converting <a target="blank" href="https://www.opendatani.gov.uk">Open Data NI</a> into cloud-native formats.</a></p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/geoawd/" class="text-dark me-3"><i class="bi bi-github"></i></a>
+                    <a href="mailto:awdonald@hotmail.com" class="text-dark"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

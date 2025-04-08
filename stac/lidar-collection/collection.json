@@ -1,0 +1,984 @@
+{
+  "type": "Collection",
+  "id": "lidar-collection",
+  "stac_version": "1.1.0",
+  "description": "A collection of LiDAR GeoTIFF files (COGs) with EPSG:29902 CRS",
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Blackwater_16_06_2014_DTM/Blackwater_16_06_2014_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Londonderry_30_04_2009_DTM/Londonderry_30_04_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunmull_DTM/Dunmull_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/LoughNeagh_2017_DSM/LoughNeagh_2017_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Keady_02_02_2012_DSM/Keady_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Raholp_DSM/Raholp_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Crossmurrin_DTM/Crossmurrin_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Glynn_DTM/Glynn_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/East Belfast_29_05_2013_DTM/East Belfast_29_05_2013_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballygowan_15_03_2010_DTM/Ballygowan_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Killyleagh__15_03_2010_DTM/Killyleagh__15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dohertys_Tower_DTM/Dohertys_Tower_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cornashee_DSM/Cornashee_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Sion Mills_02_02_2012_DTM/Sion Mills_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Omagh_23_05_2004_DSM/Omagh_23_05_2004_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Bonamargy_DSM/Bonamargy_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Slemish_DSM/Slemish_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ardquin_DSM/Ardquin_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Castlereagh_04_04_2007_DTM/Castlereagh_04_04_2007_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cushendall_15_03_2010_DTM/Cushendall_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ardtole_DSM/Ardtole_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newtownards_10_06_2008_DSM/Newtownards_10_06_2008_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newtownstewart_23_05_2004_DTM/Newtownstewart_23_05_2004_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Clady_10_03_2009_DSM/Clady_10_03_2009_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Clandeboye_DSM/Clandeboye_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballygalley_15_03_2010_DTM/Ballygalley_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Folk Park Newtownstewart_02_02_2012_DSM/Folk Park Newtownstewart_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Belfast_2006_DSM/Belfast_2006_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Burren_03_03_2012_DSM/Burren_03_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Armagh-Dungannon-Coalisland_15_03_2010_DTM/Armagh-Dungannon-Coalisland_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunluce_DSM/Dunluce_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Glenavy_02_02_2012_DTM/Glenavy_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cloghmills_16_06_2014_DTM/Cloghmills_16_06_2014_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Donegore_DSM/Donegore_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Beragh_02_02_2012_DSM/Beragh_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Carrickfergus_04_04_2007_DTM/Carrickfergus_04_04_2007_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Charlemont_DTM/Charlemont_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Scrabo_DSM/Scrabo_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Omagh_Town_11_12_2012_DSM/Omagh_Town_11_12_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Camowen_16_06_2014_DTM/Camowen_16_06_2014_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunseverick_DSM/Dunseverick_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Castlederg_23_05_2004_DTM/Castlederg_23_05_2004_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Maguiresbridge_05_03_2012_DSM/Maguiresbridge_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Strabane_23_05_2004_DSM/Strabane_23_05_2004_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunmurry_04_04_2007_DTM/Dunmurry_04_04_2007_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Inch_Abbey_DTM/Inch_Abbey_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Linford_DTM/Linford_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Devenish_DSM/Devenish_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Giants_Sconce_DSM/Giants_Sconce_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Navan_DSM/Navan_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/The_Dorsey_DTM/The_Dorsey_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Saul_DTM/Saul_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Castlederg_23_05_2004_DSM/Castlederg_23_05_2004_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Camowen_16_06_2014_DSM/Camowen_16_06_2014_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunseverick_DTM/Dunseverick_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Omagh_Town_11_12_2012_DTM/Omagh_Town_11_12_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballynavally_04_04_2007_DTM/Ballynavally_04_04_2007_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Scrabo_DTM/Scrabo_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Charlemont_DSM/Charlemont_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Donegore_DTM/Donegore_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Beragh_02_02_2012_DTM/Beragh_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Saul_DSM/Saul_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/The_Dorsey_DSM/The_Dorsey_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Navan_DTM/Navan_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Giants_Sconce_DTM/Giants_Sconce_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Devenish_DTM/Devenish_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Linford_DSM/Linford_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Inch_Abbey_DSM/Inch_Abbey_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Strabane_23_05_2004_DTM/Strabane_23_05_2004_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Maguiresbridge_05_03_2012_DTM/Maguiresbridge_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Bonamargy_DTM/Bonamargy_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Slemish_DTM/Slemish_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Sion Mills_02_02_2012_DSM/Sion Mills_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cornashee_DTM/Cornashee_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Omagh_23_05_2004_DTM/Omagh_23_05_2004_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dohertys_Tower_DSM/Dohertys_Tower_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Glynn_DSM/Glynn_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/East Belfast_29_05_2013_DSM/East Belfast_29_05_2013_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Crossmurrin_DSM/Crossmurrin_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/LoughNeagh_2017_DTM/LoughNeagh_2017_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Raholp_DTM/Raholp_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Keady_02_02_2012_DTM/Keady_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunmull_DSM/Dunmull_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Blackwater_16_06_2014_DSM/Blackwater_16_06_2014_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Glenavy_02_02_2012_DSM/Glenavy_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cloghmills_16_06_2014_DSM/Cloghmills_16_06_2014_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dunluce_DTM/Dunluce_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Burren_03_03_2012_DTM/Burren_03_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Belfast_2006_DTM/Belfast_2006_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Folk Park Newtownstewart_02_02_2012_DTM/Folk Park Newtownstewart_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Clandeboye_DTM/Clandeboye_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newtownstewart_23_05_2004_DSM/Newtownstewart_23_05_2004_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Clady_10_03_2009_DTM/Clady_10_03_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ardtole_DTM/Ardtole_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newtownards_10_06_2008_DTM/Newtownards_10_06_2008_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ardquin_DTM/Ardquin_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ringreagh_DSM/Ringreagh_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ardstraw_02_02_2012_DSM/Ardstraw_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/PortadownExtension_02_02_2012_DSM/PortadownExtension_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dougary_02_02_2012_DSM/Dougary_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dundrum_DTM/Dundrum_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Tirgoland_DSM/Tirgoland_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Maghera_20_04_2009_DTM/Maghera_20_04_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Portadown_27_04_2009_DSM/Portadown_27_04_2009_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballymena_23_04_2009_DTM/Ballymena_23_04_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Downpatrick_05_05_2009_DSM/Downpatrick_05_05_2009_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Eglinton_11_12_2012_DSM/Eglinton_11_12_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cookstown_06_06_2013_DTM/Cookstown_06_06_2013_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Fintona_02_02_2012_DSM/Fintona_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Saintfield_02_02_2012_DTM/Saintfield_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Tandragee_15_03_2010_DTM/Tandragee_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Belleek_05_03_2012_DTM/Belleek_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Greyabbey_Ballywalter_DTM/Greyabbey_Ballywalter_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Clogher_DSM/Clogher_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Bangor_04_04_2007_DTM/Bangor_04_04_2007_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Kiltierney_DSM/Kiltierney_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cahery_DTM/Cahery_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Foyle_23_05_2004_DSM/Foyle_23_05_2004_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Mount_Stewart_DTM/Mount_Stewart_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/LowerBann_16_06_2014_DSM/LowerBann_16_06_2014_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Stonyford_16_06_2014_DSM/Stonyford_16_06_2014_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Black_Pigs_Dyke_DSM/Black_Pigs_Dyke_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Garron_DTM/Garron_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lisbellaw_05_03_2012_DSM/Lisbellaw_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lurgan_05_03_2012_DSM/Lurgan_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Larne_15_03_2010_DTM/Larne_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lisburn_15_03_2010_DTM/Lisburn_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Limavady_23_05_2004_DSM/Limavady_23_05_2004_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Randalstown_15_03_2010_DTM/Randalstown_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Struell_DTM/Struell_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Mossley_05_03_2012_DTM/Mossley_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lyles_Hill_DSM/Lyles_Hill_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Moneymore_05_03_2012_DTM/Moneymore_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Magheramore_DTM/Magheramore_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Enniskillen_05_03_2012_DSM/Enniskillen_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newcastle_15_03_2010_DTM/Newcastle_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cave_Hill_DSM/Cave_Hill_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Mobuoy_DSM/Mobuoy_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newry_15_03_2010_DTM/Newry_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Tullaghoge_DSM/Tullaghoge_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Carryduff_15_03_2010_DTM/Carryduff_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballinamallard_05_03_2012_DSM/Ballinamallard_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballycastle_15_03_2010_DTM/Ballycastle_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Mobuoy_DTM/Mobuoy_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cave_Hill_DTM/Cave_Hill_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Magheramore_DSM/Magheramore_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Enniskillen_05_03_2012_DTM/Enniskillen_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Moneymore_05_03_2012_DSM/Moneymore_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lyles_Hill_DTM/Lyles_Hill_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Mossley_05_03_2012_DSM/Mossley_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Newtownabbey_15_03_2010_DTM/Newtownabbey_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Struell_DSM/Struell_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Magherafelt_15_03_2010_DTM/Magherafelt_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Limavady_23_05_2004_DTM/Limavady_23_05_2004_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Bushmills_15_03_2010_DTM/Bushmills_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lurgan_05_03_2012_DTM/Lurgan_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Lisbellaw_05_03_2012_DTM/Lisbellaw_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Garron_DSM/Garron_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballinamallard_05_03_2012_DTM/Ballinamallard_05_03_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cullybackey_15_03_2010_DTM/Cullybackey_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Tullaghoge_DTM/Tullaghoge_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cookstown_06_06_2013_DSM/Cookstown_06_06_2013_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Eglinton_11_12_2012_DTM/Eglinton_11_12_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballyclare_23_04_2009_DTM/Ballyclare_23_04_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Downpatrick_05_05_2009_DTM/Downpatrick_05_05_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballymena_23_04_2009_DSM/Ballymena_23_04_2009_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Portadown_27_04_2009_DTM/Portadown_27_04_2009_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Tirgoland_DTM/Tirgoland_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Maghera_20_04_2009_DSM/Maghera_20_04_2009_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dougary_02_02_2012_DTM/Dougary_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Dundrum_DSM/Dundrum_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ballynahinch_15_03_2010_DTM/Ballynahinch_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ardstraw_02_02_2012_DTM/Ardstraw_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/PortadownExtension_02_02_2012_DTM/PortadownExtension_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Ringreagh_DTM/Ringreagh_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Black_Pigs_Dyke_DTM/Black_Pigs_Dyke_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Banbridge_15_03_2010_DTM/Banbridge_15_03_2010_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/LowerBann_16_06_2014_DTM/LowerBann_16_06_2014_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Stonyford_16_06_2014_DTM/Stonyford_16_06_2014_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Mount_Stewart_DSM/Mount_Stewart_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Foyle_23_05_2004_DTM/Foyle_23_05_2004_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Cahery_DSM/Cahery_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Kiltierney_DTM/Kiltierney_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Clogher_DTM/Clogher_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Saintfield_02_02_2012_DSM/Saintfield_02_02_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Belleek_05_03_2012_DSM/Belleek_05_03_2012_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Greyabbey_Ballywalter_DSM/Greyabbey_Ballywalter_DSM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://better-open-data.com/stac/lidar-collection/Fintona_02_02_2012_DTM/Fintona_02_02_2012_DTM.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://better-open-data.com/stac/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://better-open-data.com/stac/lidar-collection/collection.json",
+      "type": "application/json"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-04-06T20:02:07.929379Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "OGL V3"
+}
