@@ -207,8 +207,29 @@
 		"downloadUrl": "https://better-open-data.com/lidar/Bangor_04_04_2007_DTM.tif",
 		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Bangor_04_04_2007.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
+	},	
+	{
+		"name": "Bangor Extension (05/03/2012) DSM (Cloud Optimised Geotiff)",
+		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI for Bangor Extension (05/03/2012) DSM. ASC grids have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 1.0m. The original data is provided by the Department for Infrastructure (Rivers Agency) and is available on www.opendatani.gov.uk. Data is licenced under the OGLV3.",
+		"category": "LiDAR, Elevation, DSM",
+		"provider": "DfI, Rivers Agency, LPS",
+		"fileType": "COG Geotiff",
+		"fileSize": "101236961",
+		"downloadUrl": "https://better-open-data.com/lidar/Bangor_Extension_05_03_2012_DSM.tif",
+		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Bangor%20Extension_05_03_2012.zip",
+		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
-
+	{
+		"name": "Bangor Extension (05/03/2012) DTM (Cloud Optimised Geotiff)",
+		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI for Bangor Extension (05/03/2012) DTM. ASC grids have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 1.0m. The original data is provided by the Department for Infrastructure (Rivers Agency) and is available on www.opendatani.gov.uk. Data is licenced under the OGLV3.",
+		"category": "LiDAR, Elevation, DTM",
+		"provider": "DfI, Rivers Agency, LPS",
+		"fileType": "COG Geotiff",
+		"fileSize": "93976431",
+		"downloadUrl": "https://better-open-data.com/lidar/Bangor_Extension_05_03_2012_DTM.tif",
+		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Bangor%20Extension_05_03_2012.zip",
+		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
+	},
 	{
 		"name": "Belfast (2006) DSM (Cloud Optimised Geotiff)",
 		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI for Belfast (2006) DSM. ASC grids have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 1m. The original data is provided by the Department for Infrastructure (Rivers Agency) and is available on www.opendatani.gov.uk. Belfast City LIDAR is provided by the Department for Infrastructure (Rivers) with the permission of the copyright owner, Cyient Europe Limited, and licensed under the Open Government Licence v3.0",
@@ -616,6 +637,17 @@
 		"fileSize": "107252495",
 		"downloadUrl": "https://better-open-data.com/lidar/Cookstown_06_06_2013_DSM.tif",
 		"opendatani_url": "",
+		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
+	},
+	{
+		"name": "Coleraine Portstewart Portrush (15/03/2010) DTM (Cloud Optimised Geotiff)",
+		"description": "Cloud Optimised Geotiff (COG) generated from the LiDAR data on Open Data NI for Coleraine Portstewart Portrush (15/03/2010) DTM. ASC grids have been processed with GDAL to create a COG. All files have been converted to metres and the no data value set to -9999 using GDAL_calc.py. The cell size is 1m. The original data is provided by the Department for Infrastructure (Rivers Agency) and is available on www.opendatani.gov.uk. Data is licenced under the OGLV3.",
+		"category": "LiDAR, Elevation, DTM",
+		"provider": "DfI, Rivers Agency, LPS",
+		"fileType": "COG Geotiff",
+		"fileSize": "380817567",
+		"downloadUrl": "https://better-open-data.com/lidar/Coleraine-Portstewart-Portrush_15_03_2010_DTM.tif",
+		"opendatani_url": "https://opendatani.blob.core.windows.net/lpslidar/Cookstown_06_06_2013.zip",
 		"acknowledgement": "Contains data provided under the Open Government Licence v3.0."
 	},
 	{
