@@ -1,4 +1,1 @@
-Belfast Generate deflate files
 -- run GDAL to extract filename, filesize, compression, no data value, stats, and if valid.
-source: Bangor and Portadown extensions (might be on work server for years ago even though ODNI download isn't functioning)
- -  BangorExtension_05_03_2012.zip
