@@ -44,6 +44,8 @@ const layerMap = new Map();
 const variables = {
     vert: 1,
     sunEl: 45,
+    minElevation: -25,
+    maxElevation: 1000,
 };
 
 // Initialize everything when DOM is loaded
@@ -52,6 +54,24 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementById('map')) {
         initializeMap();
         loadDatasets();  // This will handle both map layers and data table
+        
+        // Handle mouse events outside elevation control to hide it when clicking outside
+        document.addEventListener('click', (e) => {
+            const elevationControl = document.querySelector('.elevation-control');
+            const elevationToggle = document.getElementById('elevationToggle');
+            if (!elevationControl.contains(e.target) && e.target !== elevationToggle && !elevationToggle.contains(e.target)) {
+                elevationControl.classList.add('hidden');
+            }
+        });
+        
+        // Initialize elevation control toggle
+        const elevationToggle = document.getElementById('elevationToggle');
+        const elevationControl = document.querySelector('.elevation-control');
+        if (elevationToggle && elevationControl) {
+            elevationToggle.addEventListener('click', () => {
+                elevationControl.classList.toggle('hidden');
+            });
+        }
     } else {
         // If no map element exists, just load the datasets for the table
         loadDatasets();
@@ -158,6 +178,50 @@ function initializeControls() {
             });
         }
     });
+    
+    // Initialize elevation range controls
+    const minElevation = document.getElementById('minElevation');
+    const maxElevation = document.getElementById('maxElevation');
+    const elevationRangeOut = document.getElementById('elevationRangeOut');
+
+    if (minElevation && maxElevation) {
+        const minValueDisplay = document.getElementById('minValue');
+        const maxValueDisplay = document.getElementById('maxValue');
+        const clearFilterBtn = document.getElementById('clearElevationFilter');
+
+        function updateElevationRange() {
+            const min = Number(minElevation.value);
+            const max = Number(maxElevation.value);
+            
+            // Ensure min doesn't exceed max
+            if (min > max) {
+                if (this === minElevation) {
+                    minElevation.value = max;
+                } else {
+                    maxElevation.value = min;
+                }
+            }
+            
+            variables.minElevation = Number(minElevation.value);
+            variables.maxElevation = Number(maxElevation.value);
+            
+            minValueDisplay.innerText = `${variables.minElevation}m`;
+            maxValueDisplay.innerText = `${variables.maxElevation}m`;
+            
+            layerMap.forEach(layer => layer.updateStyleVariables(variables));
+        }
+
+        function clearElevationFilter() {
+            minElevation.value = minElevation.min;
+            maxElevation.value = maxElevation.max;
+            updateElevationRange();
+        }
+
+        minElevation.addEventListener('input', updateElevationRange);
+        maxElevation.addEventListener('input', updateElevationRange);
+        clearFilterBtn.addEventListener('click', clearElevationFilter);
+        updateElevationRange();
+    }
 
     const elevationOut = document.getElementById('elevationOut');
     if (map && elevationOut) {
@@ -340,7 +404,15 @@ function createHillshadeStyle(variables) {
                     ['==', ['band', 1, 0, 1], -9999.0]
                 ],
                 [0, 0, 0, 0],
-                ['color', scaled]
+                [
+                    'case',
+                    ['all',
+                        ['>=', ['band', 1], ['var', 'minElevation']],
+                        ['<=', ['band', 1], ['var', 'maxElevation']]
+                    ],
+                    ['color', scaled],
+                    [0, 0, 0, 0]
+                ]
             ]
         ]
     };

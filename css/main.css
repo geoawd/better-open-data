@@ -91,11 +91,151 @@ table.controls {
     top: 10px;
     left: 50px;
     background: rgba(255,255,255,0.8);
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
     z-index: 1000;
-    min-width: 300px;
+    min-width: 200px;
     margin: 0;
+}
+
+.elevation-toggle {
+    position: absolute;
+    right: 56px; /* layer-toggle width (36px) + gap (10px) + right margin (10px) */
+    top: 10px;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1001;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elevation-toggle:hover {
+    background: #f8f9fa;
+}
+
+.elevation-control {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: 90px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: top left;
+}
+
+.elevation-control.hidden {
+    transform: scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.elevation-label {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    left: +10px;
+    top: 50%;
+    transform: rotate(180deg) translateY(50%);
+    display: flex;
+    align-items: center;
+}
+
+.elevation-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.elevation-value {
+    font-size: 11px;
+    color: #666;
+    width: 50px;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+}
+
+.elevation-slider {
+    position: relative;
+    height: 300px;
+    width: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.elevation-slider input[type="range"] {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    transform: rotate(-90deg) translateX(-50%);
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+    background: none;
+}
+
+.elevation-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.elevation-slider input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+}
+
+.elevation-slider input[type="range"]:nth-child(1) {
+    z-index: 2;
+}
+
+.elevation-slider input[type="range"]:nth-child(2) {
+    z-index: 1;
+}
+
+.clear-filter {
+    font-size: 11px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    margin-top: 4px;
+    width: 100%;
 }
 
 table.controls td {
