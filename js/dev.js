@@ -40,7 +40,6 @@ let activeFilters = { category: [], fileType: [], provider: [] };
 let currentView = 'card';
 let cogLayers = [];
 let map;
-let currentDisplayMode = 'hillshade';
 const layerMap = new Map();
 const variables = {
     vert: 1,
