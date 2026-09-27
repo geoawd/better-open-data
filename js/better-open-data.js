@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Main data loading function
 async function loadDatasets() {
     try {
-        const response = await fetch('../data/datasets.json');
+        const response = await fetch('/data/datasets.json');
         datasets = await response.json();
         filteredDatasets = [...datasets];
         
