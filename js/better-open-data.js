@@ -50,10 +50,13 @@ const variables = {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize map only once if element exists
     if (document.getElementById('map')) {
-        initializeMap();
-        loadDatasets();  // This will handle both map layers and data table
+        try {
+            initializeMap();
+        } catch (error) {
+            console.error('Error initializing map controls:', error);
+        }
+        loadDatasets();
         
         // Handle mouse events outside elevation control to hide it when clicking outside
         document.addEventListener('click', (e) => {
@@ -185,15 +188,14 @@ function initializeControls() {
     const elevationRangeOut = document.getElementById('elevationRangeOut');
 
     if (minElevation && maxElevation) {
-        const minValueDisplay = document.getElementById('minValue');
-        const maxValueDisplay = document.getElementById('maxValue');
+        const minValueDisplay = document.getElementById('minElevationInput');
+        const maxValueDisplay = document.getElementById('maxElevationInput');
         const clearFilterBtn = document.getElementById('clearElevationFilter');
 
         function updateElevationRange() {
             const min = Number(minElevation.value);
             const max = Number(maxElevation.value);
-            
-            // Ensure min doesn't exceed max
+
             if (min > max) {
                 if (this === minElevation) {
                     minElevation.value = max;
@@ -201,15 +203,16 @@ function initializeControls() {
                     maxElevation.value = min;
                 }
             }
-            
+
             variables.minElevation = Number(minElevation.value);
             variables.maxElevation = Number(maxElevation.value);
-            
-            minValueDisplay.innerText = `${variables.minElevation}m`;
-            maxValueDisplay.innerText = `${variables.maxElevation}m`;
-            
+
+            minValueDisplay.value = variables.minElevation;
+            maxValueDisplay.value = variables.maxElevation;
+
             layerMap.forEach(layer => layer.updateStyleVariables(variables));
         }
+        ...
 
         function clearElevationFilter() {
             minElevation.value = minElevation.min;
