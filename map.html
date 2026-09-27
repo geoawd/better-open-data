@@ -61,53 +61,64 @@
 
 
     <div id="loading">Loading COG...</div>
-    <div id="map">
-        <table class="controls">
-            <tr>
-                <td><label for="transparency">Transparency: </label></td>
-                <td><input type="range" id="transparency" min="0" max="100" value="0"></td>
-            </tr>
-            <tr>
-                <td><label for="vert">Vertical: </label></td>
-                <td><input id="vert" type="range" min="1" max="5" value="1"/></td>
-                <td><span id="vertOut"></span>x</td>
-            </tr>
-            <tr>
-                <td><label for="sunEl">Sun: </label></td>
-                <td><input id="sunEl" type="range" min="0" max="90" value="45"/></td>
-                <td><span id="sunElOut"></span>°</td>
-            </tr>
-            <tr>
-                <td>Height:</td>
-                <td id="elevationOut" colspan="2"></td>
-            </tr>
-        </table>
-        <button class="elevation-toggle" id="elevationToggle">
-            <i class="bi bi-funnel"></i>
-        </button>
-        <div class="elevation-control hidden">
-            <div class="elevation-slider-container">
-                <div class="elevation-label">Elevation Filter</div>
-                <div class="elevation-value max-value" id="maxValue">1000m</div>
-                <div class="elevation-slider">
-                    <input type="range" id="maxElevation" min="-25" max="1000" value="1000" step="1"/>
-                    <input type="range" id="minElevation" min="-25" max="1000" value="-25" step="1"/>
+                <div id="map">
+                    <div class="map-controls">
+                        <div class="table-controls-container">
+                            <table class="controls">
+                                <tr>
+                                    <td><label for="transparency">Transparency: </label></td>
+                                    <td><input type="range" id="transparency" min="0" max="100" value="0"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="vert">Vertical: </label></td>
+                                    <td><input id="vert" type="range" min="1" max="5" value="1"/></td>
+                                    <td><span id="vertOut"></span>x</td>
+                                </tr>
+                                <tr>
+                                    <td><label for="sunEl">Sun: </label></td>
+                                    <td><input id="sunEl" type="range" min="0" max="90" value="45"/></td>
+                                    <td><span id="sunElOut"></span>°</td>
+                                </tr>
+                                <tr>
+                                    <td>Height:</td>
+                                    <td id="elevationOut" colspan="2"></td>
+                                </tr>
+                            </table>
+                            <button class="table-controls-toggle" id="tableControlsToggle" aria-label="Toggle table controls">
+                                <i class="bi bi-sliders"></i>
+                            </button>
+                        </div>
+                        <button class="elevation-toggle" id="elevationToggle" aria-label="Toggle elevation filter">
+                            <i class="bi bi-funnel"></i>
+                        </button>
+                        <button class="layer-toggle" id="layerToggle" aria-label="Toggle layers">
+                            <i class="bi bi-layers"></i>
+                        </button>
+                        <div class="elevation-control">
+                            <div class="elevation-slider-container">
+                                <div class="elevation-label">Elevation Filter</div>
+                                <div class="elevation-input-group">
+                                    <input type="number" id="maxElevationInput" class="elevation-input" value="1000" min="-25" max="1000" step="1"/>
+                                    <span class="elevation-unit">m</span>
+                                </div>
+                                <div class="elevation-slider">
+                                    <input type="range" id="maxElevation" min="-25" max="1000" value="1000" step="1"/>
+                                    <input type="range" id="minElevation" min="-25" max="1000" value="-25" step="1"/>
+                                </div>
+                                <div class="elevation-input-group">
+                                    <input type="number" id="minElevationInput" class="elevation-input" value="-25" min="-25" max="1000" step="1"/>
+                                    <span class="elevation-unit">m</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary clear-filter" id="clearElevationFilter">Reset</button>
+                        </div>
+                        <div class="layer-container hidden" id="layerContainer">
+                            <div id="layerList">
+                                <!-- Layers will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="elevation-value min-value" id="minValue">-25m</div>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary clear-filter" id="clearElevationFilter">Reset</button>
-        </div>
-
-
-        <button class="layer-toggle" id="layerToggle">
-            <i class="bi bi-layers"></i>
-        </button>
-        <div class="layer-container hidden" id="layerContainer">
-            <div id="layerList">
-                <!-- Layers will be populated by JavaScript -->
-            </div>
-        </div>
-    </div>
     <footer class="bg-light mt-5 py-4">
         <div class="container">
             <div class="row">
@@ -122,7 +133,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/ol@v10.4.0/dist/ol.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/geotiff@2.1.3/dist-browser/geotiff.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/geotiff@3.0.5/dist-browser/geotiff.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/proj4@2.9.0/dist/proj4.js"></script>
         <!-- Bootstrap 5 Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
