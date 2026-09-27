@@ -66,7 +66,7 @@
   ],
   "assets": {
     "cog": {
-      "href": "https://better-open-data.com/lidar/Lisbellaw_05_03_2012_DSM.tif",
+      "href": "https://better-open-data.com/lidar_zstd/Lisbellaw_05_03_2012_DSM.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"

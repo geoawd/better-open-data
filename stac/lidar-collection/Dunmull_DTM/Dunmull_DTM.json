@@ -66,7 +66,7 @@
   ],
   "assets": {
     "cog": {
-      "href": "https://better-open-data.com/lidar/Dunmull_DTM.tif",
+      "href": "https://better-open-data.com/lidar_zstd/Dunmull_DTM.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"

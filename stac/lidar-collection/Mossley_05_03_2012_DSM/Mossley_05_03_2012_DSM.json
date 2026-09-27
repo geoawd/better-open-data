@@ -66,7 +66,7 @@
   ],
   "assets": {
     "cog": {
-      "href": "https://better-open-data.com/lidar/Mossley_05_03_2012_DSM.tif",
+      "href": "https://better-open-data.com/lidar_zstd/Mossley_05_03_2012_DSM.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"
