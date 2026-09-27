@@ -226,6 +226,18 @@ function initializeControls() {
         updateElevationRange();
     }
 
+
+    function initializeDisplayModeControl() {
+    const select = document.getElementById('displayMode');
+    if (!select) return;
+
+    select.addEventListener('change', () => {
+        currentDisplayMode = select.value;
+        layerMap.forEach(layer => {
+            layer.setStyle(buildStyleForMode(currentDisplayMode, variables));
+        });
+    });
+}
     initializeDisplayModeControl();
 
 
@@ -1064,8 +1076,6 @@ let currentDisplayMode = 'hillshade';
 // 2. Shared building blocks, reused across modes
 // ---------------------------------------------------------------------
 
-// The existing nodata/edge-of-data mask from createHillshadeStyle - reused
-// by every mode so "no data" areas stay transparent everywhere.
 function buildNodataMask(innerExpression) {
     return [
         'case',
@@ -1085,8 +1095,8 @@ function buildNodataMask(innerExpression) {
     ];
 }
 
-// Reuses the exact hillshade math already in createHillshadeStyle,
-// returning a 0-255 greyscale intensity expression (not a final colour).
+// 0-255 greyscale hillshade intensity - same maths as the original
+// createHillshadeStyle, factored out so other modes can reuse it.
 function buildHillshadeIntensity() {
     const dp = ['*', 2, ['resolution']];
     const z0x = ['*', ['var', 'vert'], ['band', 1, -1, 0]];
@@ -1113,63 +1123,88 @@ function buildHillshadeIntensity() {
         ['+', calculateHillshade(225), calculateHillshade(270), calculateHillshade(315), calculateHillshade(360)],
         4
     ];
-    return ['*', 255, blended]; // 0-255 greyscale intensity
+    return ['*', 255, blended];
 }
 
-// Elevation-based colour ramp, stretched across the current
-// minElevation/maxElevation slider range so it stays useful as the
-// user adjusts the range. Terrain-style green -> yellow -> orange ->
-// brown -> white. Tweak the colour stops to taste.
-function buildColorRampExpression() {
+// Colour ramp stops, shared by all channel builders below so they stay
+// in sync. Terrain-style green -> yellow -> orange -> brown -> white.
+const COLOR_RAMP_STOPS = [
+    { fraction: 0.0, rgb: [34, 139, 34] },
+    { fraction: 0.25, rgb: [154, 205, 50] },
+    { fraction: 0.5, rgb: [238, 203, 78] },
+    { fraction: 0.75, rgb: [178, 106, 60] },
+    { fraction: 1.0, rgb: [255, 255, 255] },
+];
+
+// Builds a single-channel (R, G, or B) interpolate expression, stretched
+// across the current minElevation/maxElevation slider range.
+// channelIndex: 0 = R, 1 = G, 2 = B.
+function buildColorRampChannel(channelIndex) {
     const elevation = ['band', 1];
     const lo = ['var', 'minElevation'];
     const hi = ['var', 'maxElevation'];
     const span = ['-', hi, lo];
-    const stop = (fraction) => ['+', lo, ['*', fraction, span]];
 
-    return [
-        'interpolate',
-        ['linear'],
-        elevation,
-        stop(0.0), [34, 139, 34],    // forest green (low)
-        stop(0.25), [154, 205, 50],  // yellow-green
-        stop(0.5), [238, 203, 78],   // sandy yellow
-        stop(0.75), [178, 106, 60],  // brown
-        stop(1.0), [255, 255, 255],  // white (high)
-    ];
+    const expr = ['interpolate', ['linear'], elevation];
+    for (const { fraction, rgb } of COLOR_RAMP_STOPS) {
+        expr.push(['+', lo, ['*', fraction, span]]); // stop position (a number)
+        expr.push(rgb[channelIndex]);                 // stop value (a number)
+    }
+    return expr;
+}
+
+// Full RGB colour-ramp expression, combining the three channel expressions.
+function buildColorRampExpression() {
+    return ['color', buildColorRampChannel(0), buildColorRampChannel(1), buildColorRampChannel(2)];
+}
+
+// Real-world elevation gradient magnitude (elevation units per map unit),
+// WITHOUT the 'vert' exaggeration factor - this must reflect true terrain
+// slope, not the visually-exaggerated hillshade slope, so contour width
+// stays geometrically correct.
+function buildElevationGradientMagnitude() {
+    const dzdx = ['/', ['-', ['band', 1, 1, 0], ['band', 1, -1, 0]], ['*', 2, ['resolution']]];
+    const dzdy = ['/', ['-', ['band', 1, 0, 1], ['band', 1, 0, -1]], ['*', 2, ['resolution']]];
+    return ['sqrt', ['+', ['^', dzdx, 2], ['^', dzdy, 2]]];
 }
 
 // Distance (in elevation units) from the current pixel to the nearest
-// multiple of `interval`. Small distance = "on a contour line".
+// multiple of `interval`.
 function distanceToNearestMultiple(interval) {
     const elevation = ['band', 1];
     const nearest = ['*', interval, ['round', ['/', elevation, interval]]];
     return ['abs', ['-', elevation, nearest]];
 }
 
-// Returns a contour-line colour expression: red for 10m lines, brown for
-// 1m lines, and `fallback` (another expression, e.g. transparent or a
-// colour ramp) everywhere else. Major (10m) lines take priority since
-// every 10th metre is also a multiple of 1m.
-function buildContourExpression(fallback) {
-    const MAJOR_INTERVAL = 10;
-    const MINOR_INTERVAL = 1;
-    const MAJOR_HALF_WIDTH = 0.4; // elevation units either side of the line
-    const MINOR_HALF_WIDTH = 0.15;
+// Contour colour expression. Line thickness is specified in target SCREEN
+// PIXELS (majorPixelHalfWidth / minorPixelHalfWidth) and converted to an
+// elevation-unit threshold using the local gradient and current map
+// resolution, so lines stay a consistent width on screen regardless of
+// zoom level or how steep the terrain is.
+function buildContourExpression(fallback, options) {
+    options = options || {};
+    const majorPixelHalfWidth = options.majorPixelHalfWidth ?? 0.6;
+    const minorPixelHalfWidth = options.minorPixelHalfWidth ?? 0.4;
 
-    const isMajor = ['<', distanceToNearestMultiple(MAJOR_INTERVAL), MAJOR_HALF_WIDTH];
-    const isMinor = ['<', distanceToNearestMultiple(MINOR_INTERVAL), MINOR_HALF_WIDTH];
+    const gradientMagnitude = buildElevationGradientMagnitude(); // elev / map-unit
+    const elevPerPixel = ['*', gradientMagnitude, ['resolution']]; // elev / pixel
+    // Floor to avoid zero-width (invisible) lines on perfectly flat ground
+    const elevPerPixelFloored = ['clamp', elevPerPixel, 0.02, 1000000];
+
+    const majorHalfWidth = ['*', majorPixelHalfWidth, elevPerPixelFloored];
+    const minorHalfWidth = ['*', minorPixelHalfWidth, elevPerPixelFloored];
+
+    const isMajor = ['<', distanceToNearestMultiple(10), majorHalfWidth];
+    const isMinor = ['<', distanceToNearestMultiple(1), minorHalfWidth];
 
     return [
         'case',
-        isMajor, [178, 34, 34, 255],   // firebrick red - 10m contours
-        isMinor, [139, 90, 43, 255],   // brown - 1m contours
+        isMajor, [178, 34, 34, 255], // firebrick red - 10m contours
+        isMinor, [139, 90, 43, 255], // brown - 1m contours
         fallback,
     ];
 }
 
-// The elevation range filter (existing behaviour) - hides anything
-// outside the current min/max slider range.
 function applyElevationRangeFilter(colorExpression) {
     return [
         'case',
@@ -1195,19 +1230,17 @@ function buildStyleForMode(mode, variables) {
             break;
         }
         case 'contours': {
-            colorExpression = buildContourExpression([0, 0, 0, 0]); // transparent elsewhere
+            colorExpression = buildContourExpression([0, 0, 0, 0]);
             break;
         }
         case 'hillshade-colorramp': {
-            const intensity = buildHillshadeIntensity(); // 0-255
-            const ramp = buildColorRampExpression();      // [r,g,b]
-            // Multiply the colour ramp by hillshade intensity (0-1) per channel
+            const intensity = buildHillshadeIntensity(); // 0-255, a number
             const factor = ['/', intensity, 255];
             colorExpression = [
                 'color',
-                ['*', ['array', ramp, 0], factor],
-                ['*', ['array', ramp, 1], factor],
-                ['*', ['array', ramp, 2], factor],
+                ['*', buildColorRampChannel(0), factor],
+                ['*', buildColorRampChannel(1), factor],
+                ['*', buildColorRampChannel(2), factor],
             ];
             break;
         }
