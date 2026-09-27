@@ -212,7 +212,6 @@ function initializeControls() {
 
             layerMap.forEach(layer => layer.updateStyleVariables(variables));
         }
-        ...
 
         function clearElevationFilter() {
             minElevation.value = minElevation.min;
