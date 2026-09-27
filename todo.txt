@@ -1,1 +1,0 @@
--- run GDAL to extract filename, filesize, compression, no data value, stats, and if valid.
