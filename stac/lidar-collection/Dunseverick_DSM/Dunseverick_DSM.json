@@ -66,7 +66,7 @@
   ],
   "assets": {
     "cog": {
-      "href": "https://better-open-data.com/lidar_zstd/Dunseverick_DSM.tif",
+      "href": "https://data.better-open-data.com/lidar_zstd/Dunseverick_DSM.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"

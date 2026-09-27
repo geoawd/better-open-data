@@ -66,7 +66,7 @@
   ],
   "assets": {
     "cog": {
-      "href": "https://better-open-data.com/lidar_zstd/Lisburn_15_03_2010_DTM.tif",
+      "href": "https://data.better-open-data.com/lidar_zstd/Lisburn_15_03_2010_DTM.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"
